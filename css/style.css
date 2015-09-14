@@ -1,0 +1,61 @@
+html, body {
+  overflow-x:hidden;
+}
+body {
+  font-family: "Lora", serif;
+  color: #919AA5;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+}
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+p {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 100;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+
+
+/* GRID */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear:both;
+}
+.one-half, .one-third {
+  width:96%;
+  float:left;
+  position:relative;
+  min-height:1px;
+  margin: 0 2% 20px;
+}
