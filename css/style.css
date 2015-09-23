@@ -59,3 +59,104 @@ li {
   min-height:1px;
   margin: 0 2% 20px;
 }
+
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+ /* HEADER */
+
+header {
+color:#ffffff;
+
+ }
+
+ header nav {
+  opacity: 0.68;
+background: #383838;
+   padding:1em 0;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ }
+ header nav ul > li.btn-outline {
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#34495E;
+ }
+
+ header .hero {
+   text-align: center;
+   display:block;
+   position: relative;
+ }
+ header .hero h1 {
+   font-size:48px;
+   font-weight: normal;
+   margin:95px 0 0;
+ }
+ header .hero p {
+   font-size: 22px;
+   line-height: 26px;
+   font-weight: 100;
+   margin:10px 0 40px;
+ }
+ header .hero img {
+   display: block;
+   margin:3em auto 0;
+ }
+
+  /* BUTTONS */
+ .btn {
+   border-radius: 4px;
+   font-family: Montserrat-Regular;
+font-size: 18px;
+color: #FFFFFF;
+line-height: 19.2px;
+   color:#FFFFFF;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #80C2AF;
+border-radius: 8.39px;
+ }
+
+
