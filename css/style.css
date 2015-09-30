@@ -156,8 +156,22 @@ border-radius: 8.39px;
  }
 
  .header {
-   position: absolute;
-   left: 0px;
+   height: 135px;
+   width: 100%;
+   background-color: #383838;
+   opacity: 0.68;
+}
+
+  .hero_text {
+    background-image: url("../images/Hero_Image.png");
+    height: 90vh;
+    width: 100%;
+  }
+
+
+
+
+   /*left: 0px;
    top: 0px;
    display: block;
    height: 135px;
@@ -167,18 +181,61 @@ border-radius: 8.39px;
    padding-left: 0px;
    background-color: #383838;
    opacity: 0.68;
-   width: 100%;
+   width: 100%;*/
  }
  .hero {
    position: absolute;
+   z-index: 0;
    left: 0px;
    top: 0px;
-   display: block;
    margin-bottom: 0px;
    text-transform: none;
  }
+
+ .leftnav, .rightnav {
+   width: 45%;
+   float: left;
+ }
+
+ .rightnav {
+   float: right;
+ }
+
+ ul.leftnav {
+   list-style-type: none;
+   margin: 0px;
+ }
+
+ ul.leftnav li {
+   display: block;
+   font-family: Montserrat, sans-serif;
+   float: left;
+   padding: 60px 20px;
+   overflow: hidden;
+ }
+
+ ul.leftnav li:hover {
+   background-color: #111;
+ }
+
+
+ ul.leftnav li a {
+   /*left: 107px;
+   top: -84px;
+   margin-top: 4%;
+   margin-right: 19px;
+   margin-left: 19px;
+   padding-right: 0px;
+   padding-left: 0px;*/
+   font-family: Montserrat, sans-serif;
+   color: white;
+   font-size: 11px;
+   text-transform: uppercase;
+   float: left;
+ }
+
  .navbar_logo {
-   position: relative;
+   /*position: relative;
    left: 0px;
    top: -150px;
    right: 0px;
@@ -187,14 +244,14 @@ border-radius: 8.39px;
    display: block;
    overflow-x: visible;
    overflow-y: visible;
-   width: 67px;
-   height: 70px;
    min-height: 0px;
    margin: 0px auto;
    margin-top: 1.5%;
    padding-bottom: 0px;
    float: none;
-   clear: none;
+   clear: none;*/
+   width: 67px;
+   height: 70px;
    background-image: url('../images/Pouch Logo_Header.png');
    background-position: 0px 0px;
    background-size: cover;
@@ -245,10 +302,10 @@ border-radius: 8.39px;
    float: right;
  } */
  .home {
-   margin-bottom: 1024px;
+   /*margin-bottom: 1024px;*/
  }
  .nav_links {
-   left: 107px;
+   /*left: 107px;
    top: -84px;
    margin-top: 4%;
    margin-right: 19px;
@@ -259,7 +316,7 @@ border-radius: 8.39px;
    color: white;
    font-size: 11px;
    text-transform: uppercase;
-   float: left;
+   float: left;*/
    /*width: 5%;*/
 
  }
