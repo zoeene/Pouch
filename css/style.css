@@ -3,10 +3,11 @@ html, body {
 }
 body {
   font-family: "Lora", serif;
-  color: #919AA5;
+  color: #ffffff;
 }
 h1, h2, h3, h4, h5, h6 {
-font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
 }
 
 h2 {
@@ -82,7 +83,7 @@ li {
 
  /* HEADER */
 
-header {
+/*header {
 color:#ffffff;
 
  }
@@ -138,7 +139,7 @@ background: #383838;
  header .hero img {
    display: block;
    margin:3em auto 0;
- }
+ } */
 
   /* BUTTONS */
  .btn {
@@ -190,8 +191,9 @@ border-radius: 8.39px;
    height: 70px;
    min-height: 0px;
    margin: 0px auto;
+   margin-top: 1.5%;
    padding-bottom: 0px;
-   float: center;
+   float: none;
    clear: none;
    background-image: url('../images/Pouch Logo_Header.png');
    background-position: 0px 0px;
@@ -199,6 +201,8 @@ border-radius: 8.39px;
    background-repeat: no-repeat;
    background-attachment: scroll;
    opacity: 1;
+   text-align: center;
+
  }
  .navigations {
    position: absolute;
@@ -223,6 +227,7 @@ border-radius: 8.39px;
    left: -189px;
    top: -84px;
    right: 0px;
+   margin-top: 4%;
    margin-right: 19px;
    margin-left: 0px;
    padding-right: 0px;
@@ -234,33 +239,39 @@ border-radius: 8.39px;
    font-weight: 400;
    text-transform: uppercase;
  }
- .sign {
+/* .sign {
    position: static;
    top: -106px;
    float: right;
- }
+ } */
  .home {
    margin-bottom: 1024px;
  }
  .nav_links {
    left: 107px;
    top: -84px;
+   margin-top: 4%;
    margin-right: 19px;
+   margin-left: 19px;
    padding-right: 0px;
    padding-left: 0px;
    font-family: Montserrat, sans-serif;
    color: white;
    font-size: 11px;
    text-transform: uppercase;
+   float: left;
+   /*width: 5%;*/
+
  }
  .sign-up_btn {
-   position: relative;
-   left: -44px;
+
+   /*left: -44px;
    top: -69px;
    right: 0px;
-   bottom: -69px;
+   bottom: -69px;*/
    width: auto;
    height: 28px;
+   margin-top: 4%;
    margin-right: auto;
    margin-left: auto;
    float: right;
@@ -296,7 +307,7 @@ border-radius: 8.39px;
  .notes {
    position: absolute;
    left: 0px;
-   top: 639px;
+   top: 750px;
    right: 0px;
    bottom: 0px;
    z-index: 0;
@@ -311,7 +322,7 @@ border-radius: 8.39px;
  .images {
    position: relative;
    left: 0px;
-   top: 958px;
+   top: 943px;
    right: 0px;
    bottom: 0px;
    height: 470px;
@@ -322,7 +333,7 @@ border-radius: 8.39px;
  .links {
    position: relative;
    left: 0px;
-   top: 958px;
+   top: 917px;
    right: 0px;
    height: 470px;
    margin-top: 0px;
