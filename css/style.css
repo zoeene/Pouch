@@ -10,13 +10,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+h1 {
+  font-size: 60px;
+  margin: 0px;
+}
 h2 {
   font-size: 32px;
   font-weight: normal;
 }
 p {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 24px;
+  line-height: 29px;
   font-weight: 100;
 }
 
@@ -157,22 +161,116 @@ border-radius: 8.39px;
 
  .header {
    height: 135px;
+   width: 100%;
    background-color: #383838;
    opacity: 0.68;
-   width: 100%;
-   z-index: 1;
+}
+
+  .hero_text {
+    background-image: url("../images/Hero_Image.png");
+    height: 798px;
+    width: 100%;
+  }
+
+
+
+
+   /*left: 0px;
+   top: 0px;
+   display: block;
+   height: 135px;
+   margin: 0px auto;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   background-color: #383838;
+   opacity: 0.68;
+   width: 100%;*/
  }
  .hero {
    position: absolute;
+   z-index: 0;
    left: 0px;
    top: 0px;
-   display: block;
    margin-bottom: 0px;
    text-transform: none;
-   z-index: 0;
  }
+
+ .leftnav/*, .rightnav*/ {
+   width: 45%;
+   float: left;
+ }
+
+ .rightnav {
+   width: 45%;
+   float: right;
+
+ }
+
+ ul.leftnav {
+   list-style-type: none;
+   margin: 0px;
+ }
+
+ ul.rightnav {
+   list-style-type: none;
+   margin: 0px;
+
+ }
+
+ ul.leftnav li {
+   display: block;
+   font-family: Montserrat, sans-serif;
+   float: left;
+   padding: 60px 20px;
+   overflow: hidden;
+ }
+
+ ul.rightnav li {
+   display: block;
+   font-family: Montserrat, sans-serif;
+   float: right;
+   padding: 60px 20px;
+   overflow: hidden;
+ }
+
+ /*ul.leftnav li:hover {
+   background-color: #111;
+ }*/
+
+
+ ul.leftnav li a {
+   /*left: 107px;
+   top: -84px;
+   margin-top: 4%;
+   margin-right: 19px;
+   margin-left: 19px;
+   padding-right: 0px;
+   padding-left: 0px;*/
+   font-family: Montserrat, sans-serif;
+   color: white;
+   font-size: 11px;
+   text-transform: uppercase;
+   float: left;
+ }
+
+ /*ul.rightnav li a {
+   left: 107px;
+   top: -84px;
+   margin-top: 4%;
+   margin-right: 19px;
+   margin-left: 19px;
+   padding-right: 0px;
+   padding-left: 0px;
+   font-family: Montserrat, sans-serif;
+   color: white;
+   font-size: 11px;
+   text-transform: uppercase;
+   float: right;
+ } */
+
  .navbar_logo {
-   position: relative;
+   /*position: relative;
    left: 0px;
    top: -150px;
    right: 0px;
@@ -181,14 +279,14 @@ border-radius: 8.39px;
    display: block;
    overflow-x: visible;
    overflow-y: visible;
-   width: 67px;
-   height: 70px;
    min-height: 0px;
    margin: 0px auto;
    margin-top: 1.5%;
    padding-bottom: 0px;
    float: none;
-   clear: none;
+   clear: none;*/
+   width: 67px;
+   height: 70px;
    background-image: url('../images/Pouch Logo_Header.png');
    background-position: 0px 0px;
    background-size: cover;
@@ -196,8 +294,15 @@ border-radius: 8.39px;
    background-attachment: scroll;
    opacity: 1;
    text-align: center;
-
+   display: block;
  }
+
+.navbar {
+height: 134px;
+
+}
+
+
  .navigations {
    position: absolute;
    top: -16px;
@@ -217,7 +322,7 @@ border-radius: 8.39px;
    clear: none;
  }
  .sign_links {
-   position: relative;
+   /*position: relative;
    left: -189px;
    top: -84px;
    right: 0px;
@@ -226,7 +331,7 @@ border-radius: 8.39px;
    margin-left: 0px;
    padding-right: 0px;
    padding-left: 0px;
-   float: right;
+   float: right;*/
    font-family: Montserrat, sans-serif;
    color: white;
    font-size: 11px;
@@ -239,10 +344,10 @@ border-radius: 8.39px;
    float: right;
  } */
  .home {
-   margin-bottom: 1024px;
+   /*margin-bottom: 1024px;*/
  }
  .nav_links {
-   left: 107px;
+   /*left: 107px;
    top: -84px;
    margin-top: 4%;
    margin-right: 19px;
@@ -253,7 +358,7 @@ border-radius: 8.39px;
    color: white;
    font-size: 11px;
    text-transform: uppercase;
-   float: left;
+   float: left;*/
    /*width: 5%;*/
 
  }
@@ -265,10 +370,10 @@ border-radius: 8.39px;
    bottom: -69px;*/
    width: auto;
    height: 28px;
-   margin-top: 4%;
+   /*margin-top: 4%;
    margin-right: auto;
    margin-left: auto;
-   float: right;
+   float: right;*/
    border: 1px none black;
    border-radius: 5.59px;
    background-color: #80c2af;
@@ -277,6 +382,15 @@ border-radius: 8.39px;
    line-height: 12px;
    text-transform: uppercase;
  }
+
+.div_hero {
+text-align: center;
+padding-top: 120px;
+}
+p .div_hero {
+  margin-bottom: 20px;
+}
+
  .h1_hero {
    position: relative;
    left: 235px;
@@ -299,41 +413,58 @@ border-radius: 8.39px;
    text-align: center;
  }
  .notes {
-   position: absolute;
+   /*position: absolute;
    left: 0px;
    top: 750px;
    right: 0px;
    bottom: 0px;
-   z-index: 0;
+   z-index: 0;*/
    display: block;
-   height: 470px;
-   margin-top: 0px;
-   margin-bottom: 0px;
+   height: 570px;
    background-image: -webkit-radial-gradient(50% 50%, circle, #80c2af 49%, #76b5a3);
    background-image: radial-gradient(circle at 50% 50%, #80c2af 49%, #76b5a3);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
+   text-align: center;
  }
+
+  .btn_benefit {
+   background: rgba(0,0,0,0.04);
+   border-radius: 10px;
+   border: 1px none black;
+   font-family: Montserrat, sans-serif;
+   font-size: 12px;
+   line-height: 12px;
+   text-transform: uppercase;
+   text-decoration: none;
+
+
+ }
+
  .images {
-   position: relative;
+   /*position: relative;
    left: 0px;
    top: 943px;
    right: 0px;
-   bottom: 0px;
-   height: 470px;
+   bottom: 0px;*/
+   display: block;
+   height: 570px;
    background-image: -webkit-radial-gradient(50% 50%, circle, #f5a623 50%, #e2991f 98%);
    background-image: radial-gradient(circle at 50% 50%, #f5a623 50%, #e2991f 98%);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
+   text-align: center;
  }
  .links {
-   position: relative;
+   /*position: relative;
    left: 0px;
    top: 917px;
-   right: 0px;
-   height: 470px;
+   right: 0px;*/
+   display: block;
+   height: 570px;
    margin-top: 0px;
    background-image: -webkit-radial-gradient(50% 50%, circle, #777a7f 51%, #5f6166 98%);
    background-image: radial-gradient(circle at 50% 50%, #777a7f 51%, #5f6166 98%);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
+   text-align: center;
  }
  .h3 {
    font-family: Lato, sans-serif;
@@ -349,8 +480,3 @@ border-radius: 8.39px;
    line-height: 12px;
    text-transform: uppercase;
  }
-
-.hero_text {
-background-image: url('...images/Hero_Image.png');
-margin-top: -248px;
-}
