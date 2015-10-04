@@ -156,18 +156,11 @@ border-radius: 8.39px;
  }
 
  .header {
-   position: absolute;
-   left: 0px;
-   top: 0px;
-   display: block;
    height: 135px;
-   margin: 0px auto;
-   padding-right: 0px;
-   padding-bottom: 0px;
-   padding-left: 0px;
    background-color: #383838;
    opacity: 0.68;
    width: 100%;
+   z-index: 1;
  }
  .hero {
    position: absolute;
@@ -176,6 +169,7 @@ border-radius: 8.39px;
    display: block;
    margin-bottom: 0px;
    text-transform: none;
+   z-index: 0;
  }
  .navbar_logo {
    position: relative;
@@ -355,3 +349,8 @@ border-radius: 8.39px;
    line-height: 12px;
    text-transform: uppercase;
  }
+
+.hero_text {
+background-image: url('...images/Hero_Image.png');
+margin-top: -248px;
+}
