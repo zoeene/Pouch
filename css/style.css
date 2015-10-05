@@ -440,6 +440,66 @@ p .div_hero {
 
  }
 
+ .store {
+   padding-top: 262px;
+ }
+
+  .store h2 {
+font-family: Montserrat-Regular;
+font-size: 36px;
+color: #80C2AF;
+line-height: 44px;
+margin-left: 210px;
+margin-top: 100px;
+ }
+
+ .store p {
+   font-family: Lora-Regular;
+   font-size: 24px;
+   color: #777A7F;
+   line-height: 30px;
+   margin-left: 210px;
+ }
+
+ .power {
+   padding-top: 200px;
+ }
+
+ .power h2 {
+font-family: Montserrat-Regular;
+font-size: 36px;
+color: #80C2AF;
+line-height: 44px;
+margin-right: 210px;
+margin-top: 300px;
+
+}
+  .power p {
+  font-family: Lora-Regular;
+  font-size: 24px;
+  color: #777A7F;
+  line-height: 30px;
+  margin-right: 210px;
+}
+
+  .everywhere {
+  z-index: 1;
+  }
+
+
+  .benefits2 {
+    height: 2535px;
+    z-index: 0;
+    width: 100%;
+    opacity: 0.89;
+    background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
+  }
+
+ .arrow {
+   text-align: center;
+   padding-top: 40px;
+ }
+
  .images {
    /*position: relative;
    left: 0px;
