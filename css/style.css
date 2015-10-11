@@ -395,14 +395,9 @@ p .div_hero {
    text-align: center;
  }
  .notes {
-   /*position: absolute;
-   left: 0px;
-   top: 750px;
-   right: 0px;
-   bottom: 0px;
-   z-index: 0;*/
    display: block;
-   height: 570px;
+   /*hard coded values get kittens killed*/
+   /*height: 570px;*/
    background-image: -webkit-radial-gradient(50% 50%, circle, #80c2af 49%, #76b5a3);
    background-image: radial-gradient(circle at 50% 50%, #80c2af 49%, #76b5a3);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
@@ -459,30 +454,14 @@ p .div_hero {
    margin-left: 50px;
  }
 
- /*.power {
-   padding-top: 200px;
- }
-
- .power h2 {
-font-family: Montserrat-Regular;
-font-size: 36px;
-color: #80C2AF;
-line-height: 44px;
-margin-right: 210px;
-margin-top: 300px;
-
-}
-  .power p {
-  font-family: Lora-Regular;
-  font-size: 24px;
-  color: #777A7F;
-  line-height: 30px;
-  margin-right: 210px;
-}*/
 
 .benefit-text {
   width: 60%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px;
+
+  /*This margin 100px was causing a problem for the elements */
+  /*margin: 100px auto;*/
 }
 
   .everywhere {
