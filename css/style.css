@@ -389,7 +389,7 @@ p .div_hero {
  }
 
  .power {
-   margin-bottom: 100px;
+   margin-bottom: 200px;
  }
 
 .store h2, .power h2 {
@@ -431,7 +431,15 @@ p .div_hero {
   .everywhere {
     z-index: 0;
     text-align: center;
-    padding-bottom: 300px;
+  }
+
+  #everywhere-image {
+    margin-top: -450px;
+    margin-left: 10%;
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
   }
 
   .everywhere h1 {
@@ -440,7 +448,7 @@ p .div_hero {
 
 
   .benefits2 {
-    padding: 150px 0px 100px 0px;
+    padding: 150px 0px 500px 0px;
     width: 100%;
     display: inline-block;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
@@ -505,12 +513,24 @@ p .div_hero {
  }
 
  .white_space {
-   height: 520px;
+   padding: 100px 0;
+   color: #333;
+   background-color: #fff;
    width: 100%;
+   text-align: center;
  }
 
+ .white_space h3 {
+   margin-top: 100px;
+   color: #333;
+ }
+
+
+
  .testimonials {
-   background-image: url("..images/Testimonial_Image.png");
+   /*you were missing the leading slash here*/
+   background-image: url("/images/Testimonial_Image.png");
+   height: 400px;
    z-index: 0;
  }
 
