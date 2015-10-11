@@ -280,8 +280,7 @@ border-radius: 8.39px;
  }
 
 .navbar {
-height: 134px;
-
+  height: 134px;
 }
 
 
@@ -304,58 +303,16 @@ height: 134px;
    clear: none;
  }
  .sign_links {
-   /*position: relative;
-   left: -189px;
-   top: -84px;
-   right: 0px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 0px;
-   padding-right: 0px;
-   padding-left: 0px;
-   float: right;*/
    font-family: Montserrat, sans-serif;
    color: white;
    font-size: 11px;
    font-weight: 400;
    text-transform: uppercase;
  }
-/* .sign {
-   position: static;
-   top: -106px;
-   float: right;
- } */
- .home {
-   /*margin-bottom: 1024px;*/
- }
- .nav_links {
-   /*left: 107px;
-   top: -84px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 19px;
-   padding-right: 0px;
-   padding-left: 0px;
-   font-family: Montserrat, sans-serif;
-   color: white;
-   font-size: 11px;
-   text-transform: uppercase;
-   float: left;*/
-   /*width: 5%;*/
 
- }
  .sign-up_btn {
-
-   /*left: -44px;
-   top: -69px;
-   right: 0px;
-   bottom: -69px;*/
    width: auto;
    height: 28px;
-   /*margin-top: 4%;
-   margin-right: auto;
-   margin-left: auto;
-   float: right;*/
    border: 1px none black;
    border-radius: 5.59px;
    background-color: #80c2af;
@@ -417,6 +374,13 @@ p .div_hero {
 
  }
 
+
+.store {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
  .store, .power {
    /*padding: 100px 0px;*/
    display: block;
@@ -425,7 +389,7 @@ p .div_hero {
  }
 
  .power {
-   margin-bottom: 200px;
+   margin-bottom: 100px;
  }
 
 .store h2, .power h2 {
@@ -438,7 +402,7 @@ p .div_hero {
 }
 
  .power h2 {
-   margin-top: 100px;
+   margin-top: 200px;
  }
 
 
@@ -476,10 +440,22 @@ p .div_hero {
 
 
   .benefits2 {
-    padding: 100px 0px;
+    padding: 150px 0px 100px 0px;
     width: 100%;
-    opacity: 0.89;
+    display: inline-block;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
+  }
+
+  #imac-position, #pocket-position {
+    margin: 0 0 0 0;
+    float: right;
+  }
+
+  #pocket-position {
+    width: 35%;
+    float: left;
+    padding-left: 10%;
+    margin-top: 100px;
   }
 
  .arrow {
