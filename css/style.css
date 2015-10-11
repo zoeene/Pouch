@@ -52,6 +52,8 @@ li {
 .container:after {
   clear:both;
 }
+
+
 .one-half, .one-third {
   width:96%;
   float:left;
@@ -196,20 +198,35 @@ border-radius: 8.39px;
    text-transform: none;
  }
 
+ .navlogo {
+   width: 10%;
+   float: left;
+   text-align: center;
+ }
+
  .leftnav/*, .rightnav*/ {
-   width: 45%;
+   width: 40%;
    float: left;
  }
 
  .rightnav {
-   width: 45%;
+   width: 40%;
    float: right;
+ }
+
+ ul.rightnav {
+   list-style-type: none;
+   margin: 0px;
+   -webkit-padding-start: 0px;
+   -webkit-padding-end: 5%;
 
  }
 
  ul.leftnav {
    list-style-type: none;
    margin: 0px;
+   -webkit-padding-start: 5%;
+
  }
 
  ul.rightnav {
@@ -230,7 +247,7 @@ border-radius: 8.39px;
    display: block;
    font-family: Montserrat, sans-serif;
    float: right;
-   padding: 60px 20px;
+   padding: 50px 20px;
    overflow: hidden;
  }
 
@@ -240,51 +257,15 @@ border-radius: 8.39px;
 
 
  ul.leftnav li a {
-   /*left: 107px;
-   top: -84px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 19px;
-   padding-right: 0px;
-   padding-left: 0px;*/
    font-family: Montserrat, sans-serif;
    color: white;
    font-size: 11px;
    text-transform: uppercase;
+   text-decoration: none;
    float: left;
  }
 
- /*ul.rightnav li a {
-   left: 107px;
-   top: -84px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 19px;
-   padding-right: 0px;
-   padding-left: 0px;
-   font-family: Montserrat, sans-serif;
-   color: white;
-   font-size: 11px;
-   text-transform: uppercase;
-   float: right;
- } */
-
  .navbar_logo {
-   /*position: relative;
-   left: 0px;
-   top: -150px;
-   right: 0px;
-   bottom: 0px;
-   z-index: 0;
-   display: block;
-   overflow-x: visible;
-   overflow-y: visible;
-   min-height: 0px;
-   margin: 0px auto;
-   margin-top: 1.5%;
-   padding-bottom: 0px;
-   float: none;
-   clear: none;*/
    width: 67px;
    height: 70px;
    background-image: url('../images/Pouch Logo_Header.png');
@@ -441,20 +422,32 @@ p .div_hero {
 
  }
 
- .store {
-   padding-top: 262px;
+ .store, .power {
+   /*padding: 100px 0px;*/
+   display: block;
+   float: left;
+   width: 100%;
  }
 
-  .store h2 {
-font-family: Montserrat-Regular;
-font-size: 36px;
-color: #80C2AF;
-line-height: 44px;
-margin-left: 210px;
-margin-top: 100px;
+ .power {
+   margin-bottom: 200px;
  }
 
- .store p {
+.store h2, .power h2 {
+  font-family: Montserrat-Regular;
+  font-size: 36px;
+  color: #80C2AF;
+  line-height: 44px;
+  margin-left: 210px;
+  margin-top: 100px;
+}
+
+ .power h2 {
+   margin-top: 100px;
+ }
+
+
+ .store p, .power p {
    font-family: Lora-Regular;
    font-size: 24px;
    color: #777A7F;
@@ -462,7 +455,11 @@ margin-top: 100px;
    margin-left: 210px;
  }
 
- .power {
+ .power h2, .power p {
+   margin-left: 50px;
+ }
+
+ /*.power {
    padding-top: 200px;
  }
 
@@ -481,16 +478,26 @@ margin-top: 300px;
   color: #777A7F;
   line-height: 30px;
   margin-right: 210px;
+}*/
+
+.benefit-text {
+  width: 60%;
+  margin: 100px auto;
 }
 
   .everywhere {
-  z-index: 1;
+    z-index: 0;
+    text-align: center;
+    padding-bottom: 300px;
+  }
+
+  .everywhere h1 {
+    color: #333;
   }
 
 
   .benefits2 {
-    height: 2535px;
-    z-index: 0;
+    padding: 100px 0px;
     width: 100%;
     opacity: 0.89;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
