@@ -377,6 +377,7 @@ p .div_hero {
 
  }
 
+<<<<<<< HEAD
 
 .store {
   float: left;
@@ -384,6 +385,8 @@ p .div_hero {
   width: 100%;
 }
 
+=======
+>>>>>>> fc746165d80ac625f3e1cbc1df7ad73a4c1844a1
  .store, .power {
    /*padding: 100px 0px;*/
    display: block;
@@ -405,7 +408,11 @@ p .div_hero {
 }
 
  .power h2 {
+<<<<<<< HEAD
    margin-top: 200px;
+=======
+   margin-top: 100px;
+>>>>>>> fc746165d80ac625f3e1cbc1df7ad73a4c1844a1
  }
 
 
@@ -419,9 +426,17 @@ p .div_hero {
 
  .power h2, .power p {
    margin-left: 50px;
+<<<<<<< HEAD
+=======
+ }
+
+ /*.power {
+   padding-top: 200px;
+>>>>>>> fc746165d80ac625f3e1cbc1df7ad73a4c1844a1
  }
 
 
+<<<<<<< HEAD
 .benefit-text {
   width: 60%;
   margin: 0 auto;
@@ -429,11 +444,26 @@ p .div_hero {
 
   /*This margin 100px was causing a problem for the elements */
   /*margin: 100px auto;*/
+=======
+}
+  .power p {
+  font-family: Lora-Regular;
+  font-size: 24px;
+  color: #777A7F;
+  line-height: 30px;
+  margin-right: 210px;
+}*/
+
+.benefit-text {
+  width: 60%;
+  margin: 100px auto;
+>>>>>>> fc746165d80ac625f3e1cbc1df7ad73a4c1844a1
 }
 
   .everywhere {
     z-index: 0;
     text-align: center;
+<<<<<<< HEAD
   }
 
   #everywhere-image {
@@ -443,6 +473,9 @@ p .div_hero {
     position: absolute;
     text-align: center;
     z-index: 1;
+=======
+    padding-bottom: 300px;
+>>>>>>> fc746165d80ac625f3e1cbc1df7ad73a4c1844a1
   }
 
   .everywhere h1 {
@@ -451,7 +484,11 @@ p .div_hero {
 
 
   .benefits2 {
+<<<<<<< HEAD
     padding: 150px 0px 500px 0px;
+=======
+    padding: 100px 0px;
+>>>>>>> fc746165d80ac625f3e1cbc1df7ad73a4c1844a1
     width: 100%;
     display: inline-block;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
