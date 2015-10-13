@@ -52,6 +52,8 @@ li {
 .container:after {
   clear:both;
 }
+
+
 .one-half, .one-third {
   width:96%;
   float:left;
@@ -168,6 +170,8 @@ border-radius: 8.39px;
 
   .hero_text {
     background-image: url("../images/Hero_Image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 798px;
     width: 100%;
   }
@@ -196,20 +200,35 @@ border-radius: 8.39px;
    text-transform: none;
  }
 
+ .navlogo {
+   width: 10%;
+   float: left;
+   text-align: center;
+ }
+
  .leftnav/*, .rightnav*/ {
-   width: 45%;
+   width: 40%;
    float: left;
  }
 
  .rightnav {
-   width: 45%;
+   width: 40%;
    float: right;
+ }
+
+ ul.rightnav {
+   list-style-type: none;
+   margin: 0px;
+   -webkit-padding-start: 0px;
+   -webkit-padding-end: 5%;
 
  }
 
  ul.leftnav {
    list-style-type: none;
    margin: 0px;
+   -webkit-padding-start: 5%;
+
  }
 
  ul.rightnav {
@@ -230,7 +249,7 @@ border-radius: 8.39px;
    display: block;
    font-family: Montserrat, sans-serif;
    float: right;
-   padding: 60px 20px;
+   padding: 50px 20px;
    overflow: hidden;
  }
 
@@ -240,51 +259,15 @@ border-radius: 8.39px;
 
 
  ul.leftnav li a {
-   /*left: 107px;
-   top: -84px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 19px;
-   padding-right: 0px;
-   padding-left: 0px;*/
    font-family: Montserrat, sans-serif;
    color: white;
    font-size: 11px;
    text-transform: uppercase;
+   text-decoration: none;
    float: left;
  }
 
- /*ul.rightnav li a {
-   left: 107px;
-   top: -84px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 19px;
-   padding-right: 0px;
-   padding-left: 0px;
-   font-family: Montserrat, sans-serif;
-   color: white;
-   font-size: 11px;
-   text-transform: uppercase;
-   float: right;
- } */
-
  .navbar_logo {
-   /*position: relative;
-   left: 0px;
-   top: -150px;
-   right: 0px;
-   bottom: 0px;
-   z-index: 0;
-   display: block;
-   overflow-x: visible;
-   overflow-y: visible;
-   min-height: 0px;
-   margin: 0px auto;
-   margin-top: 1.5%;
-   padding-bottom: 0px;
-   float: none;
-   clear: none;*/
    width: 67px;
    height: 70px;
    background-image: url('../images/Pouch Logo_Header.png');
@@ -299,8 +282,7 @@ border-radius: 8.39px;
  }
 
 .navbar {
-height: 134px;
-
+  height: 134px;
 }
 
 
@@ -323,58 +305,16 @@ height: 134px;
    clear: none;
  }
  .sign_links {
-   /*position: relative;
-   left: -189px;
-   top: -84px;
-   right: 0px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 0px;
-   padding-right: 0px;
-   padding-left: 0px;
-   float: right;*/
    font-family: Montserrat, sans-serif;
    color: white;
    font-size: 11px;
    font-weight: 400;
    text-transform: uppercase;
  }
-/* .sign {
-   position: static;
-   top: -106px;
-   float: right;
- } */
- .home {
-   /*margin-bottom: 1024px;*/
- }
- .nav_links {
-   /*left: 107px;
-   top: -84px;
-   margin-top: 4%;
-   margin-right: 19px;
-   margin-left: 19px;
-   padding-right: 0px;
-   padding-left: 0px;
-   font-family: Montserrat, sans-serif;
-   color: white;
-   font-size: 11px;
-   text-transform: uppercase;
-   float: left;*/
-   /*width: 5%;*/
 
- }
  .sign-up_btn {
-
-   /*left: -44px;
-   top: -69px;
-   right: 0px;
-   bottom: -69px;*/
    width: auto;
    height: 28px;
-   /*margin-top: 4%;
-   margin-right: auto;
-   margin-left: auto;
-   float: right;*/
    border: 1px none black;
    border-radius: 5.59px;
    background-color: #80c2af;
@@ -382,6 +322,7 @@ height: 134px;
    font-size: 11px;
    line-height: 12px;
    text-transform: uppercase;
+   opacity: 1;
  }
 
 .div_hero {
@@ -414,14 +355,9 @@ p .div_hero {
    text-align: center;
  }
  .notes {
-   /*position: absolute;
-   left: 0px;
-   top: 750px;
-   right: 0px;
-   bottom: 0px;
-   z-index: 0;*/
    display: block;
-   height: 570px;
+   /*hard coded values get kittens killed*/
+   /*height: 570px;*/
    background-image: -webkit-radial-gradient(50% 50%, circle, #80c2af 49%, #76b5a3);
    background-image: radial-gradient(circle at 50% 50%, #80c2af 49%, #76b5a3);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
@@ -441,20 +377,39 @@ p .div_hero {
 
  }
 
- .store {
-   padding-top: 262px;
+
+.store {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+ .store, .power {
+   /*padding: 100px 0px;*/
+   display: block;
+   float: left;
+   width: 100%;
  }
 
-  .store h2 {
-font-family: Montserrat-Regular;
-font-size: 36px;
-color: #80C2AF;
-line-height: 44px;
-margin-left: 210px;
-margin-top: 100px;
+ .power {
+   margin-bottom: 200px;
  }
 
- .store p {
+.store h2, .power h2 {
+  font-family: Montserrat-Regular;
+  font-size: 36px;
+  color: #80C2AF;
+  line-height: 44px;
+  margin-left: 210px;
+  margin-top: 100px;
+}
+
+ .power h2 {
+   margin-top: 200px;
+ }
+
+
+ .store p, .power p {
    font-family: Lora-Regular;
    font-size: 24px;
    color: #777A7F;
@@ -462,38 +417,56 @@ margin-top: 100px;
    margin-left: 210px;
  }
 
- .power {
-   padding-top: 200px;
+ .power h2, .power p {
+   margin-left: 50px;
  }
 
- .power h2 {
-font-family: Montserrat-Regular;
-font-size: 36px;
-color: #80C2AF;
-line-height: 44px;
-margin-right: 210px;
-margin-top: 300px;
 
-}
-  .power p {
-  font-family: Lora-Regular;
-  font-size: 24px;
-  color: #777A7F;
-  line-height: 30px;
-  margin-right: 210px;
+.benefit-text {
+  width: 60%;
+  margin: 0 auto;
+  padding: 100px;
+
+  /*This margin 100px was causing a problem for the elements */
+  /*margin: 100px auto;*/
 }
 
   .everywhere {
-  z-index: 1;
+    z-index: 0;
+    text-align: center;
+  }
+
+  #everywhere-image {
+    margin-top: -450px;
+    margin-left: 10%;
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .everywhere h1 {
+    color: #333;
   }
 
 
   .benefits2 {
-    height: 2535px;
-    z-index: 0;
+    padding: 150px 0px 500px 0px;
     width: 100%;
-    opacity: 0.89;
+    display: inline-block;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
+  }
+
+  #imac-position, #pocket-position {
+    margin: 0 0 0 0;
+    float: right;
+  }
+
+  #pocket-position {
+    width: 35%;
+    float: left;
+    padding-left: 10%;
+    margin-top: 100px;
   }
 
  .arrow {
@@ -543,23 +516,48 @@ margin-top: 300px;
  }
 
  .white_space {
-   height: 520px;
+   padding: 100px 0;
+   color: #333;
+   background-color: #fff;
    width: 100%;
+   text-align: center;
  }
 
+ .white_space h3 {
+   margin-top: 100px;
+   color: #333;
+ }
+
+
+
  .testimonials {
-   background-image: url("..images/Testimonial_Image.png");
+   /*you were missing the leading slash here*/
+   background-image: url("../images/Testimonial_Image.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 600px;
    z-index: 0;
+   text-align: center;
+   padding-top: 100px;
+   margin-top: auto;
+
+
  }
 
  .pricing {
+   display: block;
    width: 100%;
    height: 1186px;
    background: #EB7B58;
+   background-repeat: repeat-x;
    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+   text-align: center;
+   text-decoration: none;
+   padding-top: 100px;
  }
 
  .footer {
+   display: block;
    height: 100px;
    width: 100%;
    background: #383838;
