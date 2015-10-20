@@ -63,6 +63,23 @@ li {
   margin: 0 2% 20px;
 }
 
+.quote-holder {
+  width: 400px;
+  margin: 0 auto 50px auto;
+  display: block;
+}
+
+.quote-right {
+    width: 70%;
+    margin-left: 4%;
+    float: left;
+}
+
+.quote-left {
+  width: 26%;
+  float: left;
+}
+
  @media (min-width: 768px) {
    .container {
      width: 750px;
@@ -74,12 +91,6 @@ li {
    }
    .one-half {
      width:46%;
-     padding-left: 200px;
-     text-align: right;
-   }
-   .one-half_Stella {
-     /*width:26%;*/
-     text-align: left;
    }
    .one-third {
      width:29.33333%;
@@ -190,6 +201,12 @@ border-radius: 8.39px;
    text-transform: none;
  }
 
+ .hero-arrow {
+   color: red;
+   display: block;
+   margin-top: 30px;
+ }
+
  .navlogo {
    width: 10%;
    float: left;
@@ -243,10 +260,9 @@ border-radius: 8.39px;
    overflow: hidden;
  }
 
- /*ul.leftnav li:hover {
-   background-color: #111;
- }*/
-
+ ul.rightnav li a {
+   text-decoration: none;
+ }
 
  ul.leftnav li a {
    font-family: Montserrat, sans-serif;
@@ -344,7 +360,7 @@ p .div_hero {
    font-weight: 400;
    text-align: center;
  }
- .notes {
+ .notes, .images {
    display: block;
    /*hard coded values get kittens killed*/
    /*height: 570px;*/
@@ -382,7 +398,7 @@ p .div_hero {
  }
 
  .power {
-   margin-bottom: 200px;
+   margin-bottom: 100px;
  }
 
 .store h2, .power h2 {
@@ -395,7 +411,7 @@ p .div_hero {
 }
 
  .power h2 {
-   margin-top: 100px;
+   margin-top: 200px;
  }
 
 
@@ -432,8 +448,8 @@ p .div_hero {
 
 .benefit-text {
   width: 60%;
-  margin: 100px auto;
-
+  margin: 0px auto;
+  padding: 100px 0;
 }
 
   .everywhere {
@@ -443,7 +459,7 @@ p .div_hero {
   }
 
   #everywhere-image {
-    margin-top: -450px;
+    margin-top: -500px;
     margin-left: 10%;
     width: 80%;
     position: absolute;
@@ -454,6 +470,7 @@ p .div_hero {
 
   .everywhere h1 {
     color: #333;
+    margin-bottom: 450px;
   }
 
 
@@ -483,13 +500,6 @@ p .div_hero {
  }
 
  .images {
-   /*position: relative;
-   left: 0px;
-   top: 943px;
-   right: 0px;
-   bottom: 0px;*/
-   display: block;
-   height: 570px;
    background-image: -webkit-radial-gradient(50% 50%, circle, #f5a623 50%, #e2991f 98%);
    background-image: radial-gradient(circle at 50% 50%, #f5a623 50%, #e2991f 98%);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
@@ -523,8 +533,25 @@ p .div_hero {
    text-transform: uppercase;
  }
 
+ a.btn_hero  {
+   width: auto;
+   border: 1px none black;
+   border-radius: 5.59px;
+   background-color: #80c2af;
+   color: #fff;
+   display: inline-block;
+   font-family: Montserrat, sans-serif;
+   font-size: 16px;
+   line-height: 12px;
+   padding-top: 100px;
+   margin-top: 20px;
+   padding: 20px;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+
  .white_space {
-   padding: 100px 0;
+   padding: 60px 0 100px 0;
    color: #333;
    background-color: #fff;
    width: 100%;
