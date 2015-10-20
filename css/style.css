@@ -73,7 +73,12 @@ li {
      width: 970px;
    }
    .one-half {
+     width:26%;
+     padding-left: 200px;
+   }
+   .one-half_Stella {
      width:46%;
+     text-align: left;
    }
    .one-third {
      width:29.33333%;
