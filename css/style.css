@@ -589,6 +589,19 @@ p .div_hero {
    margin-top: auto;
  }
 
+ .testimonial_arrow2 {
+   float: right;
+   margin-right: 120px;
+   margin-bottom: 200px;
+}
+
+ .testimonial_arrow {
+   float: left;
+   margin-left: 120px;
+   margin-top: 200px;
+
+ }
+
 /*pricing section work here*/
 
  .pricing {
@@ -721,4 +734,9 @@ p .div_hero {
 
 ul .Stella {
   text-align: left;
+}
+
+.social {
+  float: right;
+  padding-right: 100px;
 }
