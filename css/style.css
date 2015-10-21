@@ -1,5 +1,7 @@
 html, body {
   overflow-x:hidden;
+  background-color: #333;
+
 }
 
 body {
@@ -14,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 60px;
   margin: 0px;
+  font-weight: normal;
 }
 h2 {
   font-size: 32px;
@@ -169,7 +172,7 @@ background: #383838;
  } */
 
   /* BUTTONS */
- .btn {
+ /*.btn {
    border-radius: 4px;
    font-family: Montserrat-Regular;
 font-size: 16px;
@@ -180,7 +183,7 @@ line-height: 19.2px;
    padding:10px 30px;
    background: #80C2AF;
 border-radius: 8.39px;
- }
+ }*/
 
  .header {
    height: 135px;
@@ -324,22 +327,10 @@ border-radius: 8.39px;
    text-transform: uppercase;
  }
 
- .sign-up_btn {
-   width: auto;
-   height: 28px;
-   border: 1px none black;
-   border-radius: 5.59px;
-   background-color: #80c2af;
-   font-family: Montserrat, sans-serif;
-   font-size: 11px;
-   line-height: 12px;
-   text-transform: uppercase;
-   opacity: 1;
- }
 
 .div_hero {
 text-align: center;
-padding-top: 120px;
+padding-top: 160px;
 }
 p .div_hero {
   margin-bottom: 20px;
@@ -381,7 +372,7 @@ p .div_hero {
    background: rgba(0,0,0,0.04);
    color: #fff;
    display: inline-block;
-   border-radius: 10px;
+   border-radius: 5px;
    border: 1px none black;
    font-family: Montserrat, sans-serif;
    font-size: 14px;
@@ -535,21 +526,27 @@ p .div_hero {
    font-family: Lato, sans-serif;
    font-weight: 400;
  }
- .btn {
+ .signup_btn {
    width: auto;
    border: 1px none black;
-   border-radius: 5.59px;
+   border-radius: 5px;
    background-color: #80c2af;
    font-family: Montserrat, sans-serif;
    font-size: 11px;
    line-height: 12px;
    text-transform: uppercase;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+
  }
 
- a.btn_hero  {
+ a.btn_hero, .btn, .price_btn {
    width: 25%;
    border: 1px none black;
-   border-radius: 5.59px;
+   border-radius: 5px;
    background-color: #80c2af;
    color: #fff;
    display: inline-block;
@@ -561,6 +558,10 @@ p .div_hero {
    padding: 18px;
    text-decoration: none;
    text-transform: uppercase;
+ }
+
+ .price_btn {
+   width: 68%;
  }
 
  .white_space {
@@ -679,12 +680,15 @@ p .div_hero {
  .footer_nav_links {
    width: 40%;
    float: left;
+
    /*padding-left: 20px;*/
  }
 
  ul.footer_nav_links {
    list-style-type: none;
    margin: 0px;
+   float: left;
+
    /*-webkit-padding-start: 5%;*/
  }
 
@@ -703,6 +707,7 @@ p .div_hero {
    text-transform: uppercase;
    text-decoration: none;
    float: left;
+   display: inline-block;
  }
 
   li .copyright-block {
