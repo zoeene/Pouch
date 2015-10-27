@@ -1,6 +1,6 @@
 html, body {
   overflow-x:hidden;
-  background-color: #333;
+  background-color: #fafafa;
 
 }
 
@@ -11,6 +11,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
+  font-weight: normal;
 }
 
 h1 {
@@ -684,6 +685,8 @@ p .div_hero {
    background: #383838;
    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
    z-index: 1;
+   bottom: 0;
+   /*position: absolute;*/
  }
 
  .footer_nav {
@@ -757,4 +760,132 @@ ul .Stella {
 .social {
   float: right;
   padding-right: 100px;
+}
+
+
+/*DASHBOARD*/
+
+html, body .DASHBOARD  {
+background-color: #fafafa;
+}
+
+
+.dashboard_header {
+  background: #777A7F;
+  box-shadow: 0px 5px 0px 0px #F5A623;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+
+}
+
+.dashboard_logo {
+  float: left;
+  margin-left: 200px;
+  z-index: 1;
+}
+
+.dashboard_footer {
+  background: #777A7F;
+  width: 100%;
+  height: 70px;
+  /*display: block;*/
+  position: fixed;
+  bottom: 0;
+}
+
+
+.dashboard_footer h4 {
+
+
+}
+
+.dashboard_footer h5, a {
+
+}
+
+
+.blank_state {
+ margin-top: 120px;
+ margin-left: 200px;
+}
+
+.blank_state h3 {
+color: #4A4A4A;
+}
+
+.blank_state fa fa-th {
+/*font-size: 20px;*/
+/*line-height: 20px;*/
+background-image: radial-gradient(50% 45%, #F5A623 50%, #EB7B58 100%);
+margin-left: 200px;
+}
+
+.ngozi_small {
+  margin-left: 200px;
+  margin-top: -45px;
+}
+
+.ADD {
+  float: right;
+  margin-right: 200px;
+  margin-top: 37px;
+
+}
+
+.GEAR {
+  float: right;
+  margin-right: 200px;
+  margin-top: -185px;
+}
+
+.rightnav_dsh  {
+width: 40%;
+float: right;
+}
+
+ul.rightnav_dsh {
+  list-style-type: none;
+}
+
+ul.rightnav_dsh li {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  float: right;
+  padding: 6px 30px;
+  overflow: hidden;
+}
+
+ul.rightnav_dsh li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.middlenav {
+width: 100%;
+display: block;
+}
+
+
+.new_content {
+  border: 3px dashed #EDD08C;
+  border-radius: 21px;
+  /*margin-left: 200px;*/
+  margin-right: 200px;
+  /*height: 70px;*/
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+}
+
+.new_content p {
+  color: #4a4a4a;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+}
+
+.DragDrop {
+  color: #F9B42D;
 }
