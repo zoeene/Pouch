@@ -28,9 +28,11 @@
     </div>
 
     <header class="dashboard_header">
-    <img src="dashboard images/dashboard small logo.png" alt="logo" class="dashboard_logo"/>
+      <div class="dash_container">
+        <img src="dashboard images/dashboard small logo.png" alt="logo" class="dashboard_logo"/>
 
-        <a href="#"> <img src="dashboard images/ADD.png" alt="Add" class="ADD" /></a>
+        <a href="#" class="add_circle"><i class="fa fa-plus"></i></a>
+        <!-- <img src="dashboard images/ADD.png" alt="Add" class="ADD" /></a> -->
 
         <nav class="dashboard_icons">
           <ul class="rightnav_dsh">
@@ -41,35 +43,47 @@
             <li><a class="nav_links" href="#"><i class="fa fa-file-o fa-2x"></i></a></li>
           </ul>
         </nav>
+      </div>
 
     </header>
 
   <main role="main">
 
-    <div class="blank_state">
-      <h3><i class="fa fa-th"></i>  All Items</h3>
+    <div class="container">
+      <div class="blank_state">
+        <h3><i class="fa fa-th"></i>  All Items</h3>
 
-      <div class="new_content">
+        <div class="new_content">
 
-        <div class="icons">
-          <ul class="middlenav">
-            <li><a class="nav_links" href="#"><img src="dashboard images/pocket small icon.png" alt="pocket"/></a></li>
-            <li><a class="nav_links" href="#"><i class="fa fa-link"></i></a></li>
-            <li><a class="nav_links" href="#"><i class="fa fa-picture-o"></i></a></li>
-            <li><a class="nav_links" href="#"><i class="fa fa-file-o"></i></a></li>
-          </ul>
+          <div class="icons">
+            <div class="center-drop">
+              <ul class="middlenav">
+                <li>
+                  <!-- <img src="dashboard images/pocket small icon.png" alt="pocket"/> -->
+                  <svg>
+                    <g id="Page-1" stroke="#333" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Imported-Layers-Copy-3" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)">
+                            <path d="M23.1555408,9.80041874 C23.1555408,11.734604 21.4894645,13.3032994 19.4366497,13.3032994 C17.3822031,13.3032994 15.7161268,11.734604 15.7161268,9.80041874 C15.7161268,7.86623348 17.3822031,6.29753808 19.4366497,6.29753808 C21.4894645,6.29753808 23.1555408,7.86623348 23.1555408,9.80041874" id="Fill-1" fill="#333333" sketch:type="MSShapeGroup"></path>
+                            <path d="M0.0719808763,19.3063894 L0.0719808763,1.58899212 C0.0719808763,0.77489426 0.727950804,0.11493755 1.54292421,0.11493755 L37.3303752,0.11493755 C38.1427548,0.11493755 38.8013186,0.775550763 38.8013186,1.58899212 L38.8013186,19.3063894 C38.8013186,29.9055953 30.1315212,38.4978413 19.4366497,38.4978413 C8.74177826,38.4978413 0.0719808763,29.9055953 0.0719808763,19.3063894 Z" id="Stroke-2" stroke="#333333" stroke-width="3.087" sketch:type="MSShapeGroup"></path>
+                        </g>
+                    </g>
+                  </svg>
+
+                </li>
+                <li><i class="fa fa-link fa-2x"></i></li>
+                <li><i class="fa fa-picture-o fa-2x"></i></li>
+                <li><i class="fa fa-file-o fa-2x"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <p><strong class="DragDrop">Drag and drop</strong> or click the plus button and create your first note, add an image, save a link, and store it all in a new pocket.</p>
+            <a href="#" class="btn_hero"><i class="fa fa-plus"></i>  Add your first item</a>
+          </div>
         </div>
-
-        <div>
-          <p><strong class="DragDrop">Drag and drop</strong> or click the plus button and create your first note, add an image, save a link, and store it all in a new pocket.</p>
-          <a href="#" class="btn_hero"><i class="fa fa-plus"></i>  Add your first item</a>
-        </div>
-
-
-
 
       </div>
-
     </div>
 
     <footer class="dashboard_footer">

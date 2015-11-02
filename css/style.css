@@ -55,6 +55,7 @@ li {
   padding-right: 15px;
   position: relative;
 }
+
 .container:before,
 .container:after {
   content: " ";
@@ -63,7 +64,6 @@ li {
 .container:after {
   clear:both;
 }
-
 
 .one-half, .one-third {
   width:96%;
@@ -90,13 +90,17 @@ li {
   float: left;
 }
 
+.dash_container {
+  margin: 0 auto;
+}
+
  @media (min-width: 768px) {
-   .container {
+   .container, .dash_container {
      width: 750px;
    }
  }
  @media (min-width: 992px) {
-   .container {
+   .container, .dash_container {
      width: 970px;
    }
    .one-half {
@@ -110,81 +114,13 @@ li {
    }
  }
  @media (min-width: 1200px) {
-   .container {
+   .container, .dash_container {
      width: 1170px;
+     margin: 0 auto;
    }
  }
 
  /* HEADER */
-
-/*header {
-color:#ffffff;
- }
- header nav {
-  opacity: 0.68;
-background: #383838;
-   padding:1em 0;
- }
- header nav ul {
-   display:inline;
-   text-align: right;
-   float:right;
-   margin:0;
- }
- header nav ul > li {
-   list-style-type: none;
-   display: inline-block;
-   margin:0 15px;
- }
- header nav ul > li.btn-outline {
-   padding:10px 15px;
-   border:2px solid #FFFFFF;
-   border-radius: 4px;
- }
- header nav ul > li.btn-outline:hover {
-   background:#FFFFFF;
- }
- header nav ul > li > a {
-   color:#FFFFFF;
-   text-decoration: none;
- }
- header nav ul > li.btn-outline:hover > a {
-   color:#34495E;
- }
- header .hero {
-   text-align: center;
-   display:block;
-   position: relative;
- }
- header .hero h1 {
-   font-size:48px;
-   font-weight: normal;
-   margin:95px 0 0;
- }
- header .hero p {
-   font-size: 22px;
-   line-height: 26px;
-   font-weight: 100;
-   margin:10px 0 40px;
- }
- header .hero img {
-   display: block;
-   margin:3em auto 0;
- } */
-
-  /* BUTTONS */
- /*.btn {
-   border-radius: 4px;
-   font-family: Montserrat-Regular;
-font-size: 16px;
-color: #FFFFFF;
-line-height: 19.2px;
-   color:#FFFFFF;
-   text-decoration: none;
-   padding:10px 30px;
-   background: #80C2AF;
-border-radius: 8.39px;
- }*/
 
  .header {
    height: 135px;
@@ -561,6 +497,13 @@ p .div_hero {
    text-transform: uppercase;
  }
 
+ a.btn_hero {
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   width: 40%;
+}
+
  .price_btn {
    width: 68%;
  }
@@ -769,6 +712,9 @@ html, body .DASHBOARD  {
 background-color: #fafafa;
 }
 
+.dashboard_icons {
+  margin: 0 auto;
+}
 
 .dashboard_header {
   background: #777A7F;
@@ -776,13 +722,14 @@ background-color: #fafafa;
   width: 100%;
   height: 70px;
   position: fixed;
+  z-index: 2;
 
 }
 
 .dashboard_logo {
   float: left;
-  margin-left: 200px;
   z-index: 1;
+  margin-top: -16px;
 }
 
 .dashboard_footer {
@@ -804,6 +751,20 @@ background-color: #fafafa;
 
 }
 
+.add_circle {
+  border-radius: 50px;
+  background-color: #80c2af;
+  display: block;
+  float: right;
+  font-size: 20px;
+  padding: 10px 14px;
+  margin-top: 29px;
+  border: 8px solid #fafafa;
+}
+
+a.add_circle {
+  color: #fff;
+}
 
 .blank_state {
  margin-top: 120px;
@@ -828,30 +789,22 @@ margin-left: 200px;
 
 .ADD {
   float: right;
-  margin-right: 200px;
   margin-top: 37px;
 
 }
 
 .GEAR {
   float: right;
-  margin-right: 200px;
   margin-top: -185px;
 }
 
-.rightnav_dsh  {
-width: 40%;
-float: right;
-}
-
-ul.rightnav_dsh {
-  list-style-type: none;
+ul.rightnav_dsh  {
+  text-align: center;
 }
 
 ul.rightnav_dsh li {
-  display: block;
+  display: inline-block;
   font-family: Montserrat, sans-serif;
-  float: right;
   padding: 6px 30px;
   overflow: hidden;
 }
@@ -862,10 +815,57 @@ ul.rightnav_dsh li a {
 }
 
 
-.middlenav {
-width: 100%;
-display: block;
+.center {
+  margin: 0 auto;
+  width: 50%
 }
+
+.icons {
+  width: 100%;
+  float: left;
+}
+
+ul.middlenav {
+  text-align: center;
+  list-style: none;
+  color: #333;
+}
+
+ul.middlenav li {
+  display: inline-block;
+  padding: 30px;
+}
+
+ul.middlenav li svg {
+  margin-top: 10px;
+}
+
+svg {
+  /*color: #333;*/
+  /*display: inline-flex;*/
+  width: 43px;
+  height: 43px;
+  margin-top: 10px;
+  display: inline-block;
+  /*border: 1px solid #333;*/
+  /*fill: red;*/
+}
+
+.svglogo {
+  color: #333;
+  border: 10px solid green;
+}
+
+/*ul.rightnav_dsh, ul.middlenav  {
+  text-align: center;
+}
+
+ul.rightnav_dsh li {
+  display: inline-block;
+  font-family: Montserrat, sans-serif;
+  padding: 6px 30px;
+  overflow: hidden;
+}*/
 
 
 .new_content {
@@ -875,7 +875,7 @@ display: block;
   /*margin-left: 200px;*/
   margin-right: 200px;
   /*height: 70px;*/
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 160px;
 
 }
