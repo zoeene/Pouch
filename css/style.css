@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-h1 {
+h1, .h1_signup {
   font-size: 60px;
   margin: 0px;
   font-weight: normal;
@@ -54,6 +54,7 @@ li {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
+  max-width: 80%;
 }
 
 .container:before,
@@ -129,14 +130,19 @@ li {
    opacity: 0.68;
 }
 
-  .hero_text {
+  .hero_text, .hero_text2 {
     background-image: url("../images/Hero_Image.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 798px;
     width: 100%;
   }
- }
+
+.hero_text2 {
+  background-image: url("../images/blurred header img.png");
+
+}
+
 
  .hero {
    position: absolute;
@@ -621,7 +627,7 @@ p .div_hero {
    color: #EB7B58;
  }
 
- .footer {
+ .footer, .footer2 {
    display: block;
    height: 100px;
    width: 100%;
@@ -631,6 +637,10 @@ p .div_hero {
    bottom: 0;
    /*position: absolute;*/
  }
+
+.footer2 {
+  position: absolute;
+}
 
  .footer_nav {
    /*height: 100px;*/
@@ -768,7 +778,7 @@ a.add_circle {
 
 .blank_state {
  margin-top: 120px;
- margin-left: 200px;
+ /*margin-left: 200px;*/
 }
 
 .blank_state h3 {
@@ -783,7 +793,7 @@ margin-left: 200px;
 }
 
 .ngozi_small {
-  margin-left: 200px;
+  /*margin-left: 200px;*/
   margin-top: -45px;
 }
 
@@ -873,10 +883,10 @@ ul.rightnav_dsh li {
   /*#EDD08C*/
   border-radius: 21px;
   /*margin-left: 200px;*/
-  margin-right: 200px;
+  /*margin-right: 200px;*/
   /*height: 70px;*/
   padding-top: 100px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
 
 }
 
@@ -891,4 +901,51 @@ ul.rightnav_dsh li {
 
 .DragDrop {
   color: #F9B42D;
+}
+
+/*Sign Up*/
+
+.sign-up {
+background: #FAFAFA;
+border-radius: 14px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 420px;
+margin-right: 420px;
+}
+
+.h1_signup {
+  color: #383838;
+}
+
+.input {
+border: 1px solid #979797;
+border-radius: 7px;
+width: auto;
+text-align: left;
+font-family: Lora-Regular;
+font-size: 12px;
+color: rgba(119,121,127,0.50);
+line-height: 14px;
+}
+
+.mini {
+font-family: Lora-Regular;
+font-size: 10px;
+color: #4A4A4A;
+line-height: 12px;
+}
+
+.twitter_right, .facebook_left {
+  position: absolute;
+  display: block;
+  height: 60px;
+  width: 50%;
+  top: 405px;
+  background-image: radial-gradient(50% 50%, #54ABEE 50%, #4FA0DE 100%);
+  text-align: center;
+}
+
+.facebook_left {
+  background-image: radial-gradient(50% 50%, #3853A4 50%, #39568B 100%);
 }
