@@ -34,13 +34,25 @@
         <a href="#" class="add_circle"><i class="fa fa-plus"></i></a>
         <!-- <img src="dashboard images/ADD.png" alt="Add" class="ADD" /></a> -->
 
-        <nav class="dashboard_icons">
+        <nav class="dashboard_icons navhide">
           <ul class="rightnav_dsh">
             <li><a class="nav_links" href="#"><i class="fa fa-th fa-2x"></i></a></li>
             <li><a class="nav_links" href="#"><img src="dashboard images/pocket small icon.png" alt="pocket"/></a></li>
             <li><a class="nav_links" href="#"><i class="fa fa-link fa-2x"></i></a></li>
             <li><a class="nav_links" href="#"><i class="fa fa-picture-o fa-2x"></i></a></li>
             <li><a class="nav_links" href="#"><i class="fa fa-file-o fa-2x"></i></a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="mobile_nav_target"><i class="fa fa-bars fa-2x"></i></a>
+
+        <nav class="mobile_nav fadeInDown">
+          <ul>
+            <li><a href="">Pockets</a></li>
+            <li><a href="">Notes</a></li>
+            <li><a href="">Links</a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="">All items</a></li>
           </ul>
         </nav>
       </div>
@@ -78,7 +90,7 @@
           </div>
 
           <div>
-            <p><strong class="DragDrop">Drag and drop</strong> or click the plus button and create your first note, add an image, save a link, and store it all in a new pocket.</p>
+            <p><span class="hide"><strong class="DragDrop">Drag and drop</strong> or </span> click the plus button and create your first note, add an image, save a link, and store it all in a new pocket.</p>
             <a href="#" class="btn_hero"><i class="fa fa-plus"></i>  Add your first item</a>
           </div>
         </div>
@@ -93,9 +105,15 @@
         <h5><a href="index.html">Log Out</a></h5>
       </div>
       <a href="#"><img src="dashboard images/GEAR.png" alt="Settings" class="GEAR" /></a>
-
-
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $('.mobile_nav_target').on('click', function(){
+        $('.mobile_nav').toggle();
+        // console.log('working');
+      });
+    </script>
 
 
   </main>

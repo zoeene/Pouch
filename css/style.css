@@ -1,7 +1,50 @@
+.mobile_nav {
+  width: 30%;
+  background-color: green;
+  margin-top: -16px;
+  z-index: 2;
+  float: right;
+}
+
+.hide, .navhide, .add_circle {
+  display: none;
+}
+
+.dashboard_logo {
+  float: left;
+  z-index: 1;
+  margin-top: -0px;
+}
+
+@media (min-width: 768px) {
+  .hide {
+    display: inline-block;
+  }
+
+  .navhide, .add_circle {
+    display: block;
+  }
+
+  .add_circle {
+    border-radius: 50px;
+    background-color: #80c2af;
+    float: right;
+    font-size: 20px;
+    padding: 10px 14px;
+    margin-top: 29px;
+    border: 8px solid #fafafa;
+  }
+
+  .dashboard_logo {
+    float: left;
+    z-index: 1;
+    margin-top: -16px;
+  }
+}
+
 html, body {
   overflow-x:hidden;
   background-color: #fafafa;
-
 }
 
 body {
@@ -736,11 +779,11 @@ background-color: #fafafa;
 
 }
 
-.dashboard_logo {
+/*.dashboard_logo {
   float: left;
   z-index: 1;
   margin-top: -16px;
-}
+}*/
 
 .dashboard_footer {
   background: #777A7F;
@@ -761,7 +804,7 @@ background-color: #fafafa;
 
 }
 
-.add_circle {
+/*.add_circle {
   border-radius: 50px;
   background-color: #80c2af;
   display: block;
@@ -770,7 +813,7 @@ background-color: #fafafa;
   padding: 10px 14px;
   margin-top: 29px;
   border: 8px solid #fafafa;
-}
+}*/
 
 a.add_circle {
   color: #fff;
@@ -880,27 +923,40 @@ ul.rightnav_dsh li {
 
 .new_content {
   border: 3px dashed #ececec;
-  /*#EDD08C*/
   border-radius: 21px;
-  /*margin-left: 200px;*/
-  /*margin-right: 200px;*/
-  /*height: 70px;*/
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .new_content p {
   color: #4a4a4a;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 30px;
 }
 
 .DragDrop {
   color: #F9B42D;
+}
+
+@media (min-width: 768px) {
+  .new_content {
+    border: 3px dashed #ececec;
+    border-radius: 21px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .new_content p {
+    color: #4a4a4a;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 /*Sign Up*/
