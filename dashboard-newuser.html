@@ -35,9 +35,10 @@
         <!-- <img src="dashboard images/ADD.png" alt="Add" class="ADD" /></a> -->
 
         <nav class="dashboard_icons">
+          <a href="#" class="mobile_nav_target"><i class="fa fa-bars fa-2x"></i></a>
+
           <ul class="rightnav_dsh">
-            <a href="#" class="mobile_nav_target"><i class="fa fa-bars fa-2x"></i></a>
-        <nav class="dashboard_icons navhide">
+            <nav class="dashboard_icons navhide">
             <li><a class="nav_links" href="#"><i class="fa fa-th fa-2x"></i></a></li>
             <li><a class="nav_links" href="#"><img src="dashboard images/pocket small icon.png" alt="pocket"/></a></li>
             <li><a class="nav_links" href="#"><i class="fa fa-link fa-2x"></i></a></li>
@@ -51,11 +52,11 @@
 
         <nav class="mobile_nav fadeInDown">
           <ul>
-            <li><a href="">Pockets</a></li>
-            <li><a href="">Notes</a></li>
-            <li><a href="">Links</a></li>
-            <li><a href="">Images</a></li>
-            <li><a href="">All items</a></li>
+            <li><a href="#1">Pockets</a></li>
+            <li><a href="#1">Notes</a></li>
+            <li><a href="#1">Links</a></li>
+            <li><a href="#1">Images</a></li>
+            <li><a href="#1">All items</a></li>
           </ul>
         </nav>
 
@@ -117,8 +118,12 @@
     <script>
       $('.mobile_nav_target').on('click', function(){
         $('.mobile_nav').toggle();
-        // console.log('working');
       });
+
+      $('.mobile_nav').on('click', function(){
+        $(this).css("display", "none");
+      });
+
     </script>
 
 

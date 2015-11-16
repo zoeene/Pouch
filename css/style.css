@@ -1,37 +1,64 @@
 .mobile_nav {
-  width: 25%;
+  display: none;
+  width: 100%;
   background-color: #ececec;
-  border-radius: 10px;
-  margin-top: -16px;
+  /*border-radius: 10px;*/
+  margin-top: -2px;
   z-index: 2;
   float: right;
 }
 
-ul.mobile_nav {
+.mobile_nav ul {
   list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 .mobile_nav li a {
+  display: block;
   font-family: Montserrat, sans-serif;
   color: grey;
-  font-size: 11px;
+  font-size: 20px;
   text-decoration: none;
-
+  padding: 20px 25px;
 }
 
-
+.mobile_nav li a:hover {
+  background-color: #dadada;
+}
 
 .hide, .navhide, .add_circle {
   display: none;
 }
 
 .dashboard_logo {
-  float: left;
+  float: right;
   z-index: 1;
-  margin-top: -0px;
+  margin-top: -16px;
+}
+
+a.mobile_nav_target {
+  text-align: center;
+  display: inline-block;
+  font-family: Montserrat, sans-serif;
+  padding: 6px 30px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  float: left;
 }
 
 @media (min-width: 768px) {
+  .dashboard_logo {
+    float: left;
+    z-index: 1;
+    margin-top: -0px;
+  }
+
+  a.mobile_nav_target {
+    display: none;
+  }
+
   .hide {
     display: inline-block;
   }
@@ -870,6 +897,7 @@ margin-left: 200px;
 
 ul.rightnav_dsh  {
   text-align: center;
+  padding-left: 0;
 }
 
 ul.rightnav_dsh li {
@@ -882,19 +910,6 @@ ul.rightnav_dsh li {
 ul.rightnav_dsh li a {
   text-decoration: none;
   color: #ffffff;
-}
-
-a.mobile_nav_target {
-  text-align: center;
-  display: inline-block;
-  font-family: Montserrat, sans-serif;
-  padding: 6px 30px;
-  overflow: hidden;
-  text-decoration: none;
-  color: #ffffff;
-  /*width: 100%;*/
-  float: left;
-  /*margin: 0 auto;*/
 }
 
 .center {
