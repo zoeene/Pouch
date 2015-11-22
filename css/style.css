@@ -8,7 +8,7 @@
   float: right;
 }
 
-.mobile_nav ul {
+.mobile_nav, .home_mobile_nav ul {
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
@@ -23,9 +23,41 @@
   padding: 20px 25px;
 }
 
-.mobile_nav li a:hover {
+.mobile_nav,  li a:hover {
   background-color: #dadada;
 }
+
+
+
+.home_mobile_nav {
+  display: none;
+  width: 100%;
+  background-color: #fafafa;
+  opacity: 5;
+  /*border-radius: 10px;*/
+  margin-top: -1px;
+  z-index: 2;
+  float: right;
+}
+
+ .home_mobile_nav li a {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase
+  color: #383838;
+  /*^ for some reason the color isn't holding?*/
+  font-size: 18px;
+  text-decoration: none;
+  text-decoration-style: none;
+  text-decoration-color: none;
+  padding: 20px 25px;
+}
+
+.home_mobile_nav li a:hover {
+  background-color: #383838;
+  color: #fafafa
+}
+
 
 .hide, .navhide, .add_circle {
   display: none;
@@ -48,14 +80,54 @@ a.mobile_nav_target {
   float: left;
 }
 
+.home_mobile_nav_target {
+  text-align: center;
+  display: inline-block;
+  font-family: Montserrat, sans-serif;
+  padding: 6px 30px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  float: right;
+  margin-top: 50px;
+}
+
+
+ .navbar_logo {
+   width: 67px;
+   height: 70px;
+   background-image: url('../images/Pouch Logo_Header.png');
+   background-position: 0px 0px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   opacity: 1;
+   text-align: center;
+   display: inline-block;
+   margin-top: 30px;
+   margin-left: 20px;
+ }
+
 @media (min-width: 768px) {
   .dashboard_logo {
     float: left;
     z-index: 1;
     margin-top: -0px;
+
   }
 
+/*Why doesnt this work below?? Had to implement it in outside .navbar_logo code*/
+.navbar_logo {
+    margin-left: 20px;
+
+  }
+
+
   a.mobile_nav_target {
+    display: none;
+  }
+
+  a.home_mobile_nav_target {
     display: none;
   }
 
@@ -82,6 +154,18 @@ a.mobile_nav_target {
     z-index: 1;
     margin-top: -16px;
   }
+
+    /*h1  {
+    font-size: 30px;
+  }
+
+  .div_hero p  {
+   font-size: 16px;
+   margin-left: 200px;
+   margin-right: 200px;
+ }*/
+
+
 }
 
 
@@ -267,6 +351,8 @@ li {
    margin: 0px;
    -webkit-padding-start: 0px;
    -webkit-padding-end: 5%;
+   padding-right: 0px;
+
 
  }
 
@@ -280,6 +366,8 @@ li {
  ul.rightnav {
    list-style-type: none;
    margin: 0px;
+   padding-right: 0px;
+
 
  }
 
@@ -311,7 +399,7 @@ li {
    text-decoration: none;
    float: left;
  }
-
+/*
  .navbar_logo {
    width: 67px;
    height: 70px;
@@ -324,7 +412,7 @@ li {
    text-align: center;
    display: inline-block;
    margin-top: 30px;
- }
+ }*/
 
 .navbar {
   height: 134px;

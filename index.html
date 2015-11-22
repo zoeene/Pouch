@@ -36,7 +36,8 @@
       <header class="header">
         <!-- <nav class="navigations"></nav> -->
         <nav class="navbar container">
-          <ul class="leftnav">
+          <a href="#" class="home_mobile_nav_target"><i class="fa fa-bars fa-2x"></i></a>
+          <ul class="leftnav navhide">
             <li><a class="nav_links" href="#">About Us</a></li>
             <li><a class="nav_links" href="#">Faqs</a></li>
             <li><a class="nav_links" href="#">Testimonials</a></li>
@@ -45,12 +46,28 @@
           <div class="navlogo">
             <a class="navbar_logo" href="index.html"></a>
           </div>
-          <ul class="rightnav">
+          <ul class="rightnav navhide">
             <li><a class="sign_links" href="#">Sign In</a></li>
             <li><a class="signup_btn" href="#">Sign Up</a></li>
           </ul>
 
         </nav>
+
+        <nav class="home_mobile_nav fadeInDown">
+          <ul>
+            <li><a href="#1">Sign Up</a></li>
+            <li><a href="#1">Sign In</a></li>
+            <li><a href="#1">About Us</a></li>
+            <li><a href="#1">FAQS</a></li>
+            <li><a href="#1">Testimonials</a></li>
+            <li><a href="#1">Download</a></li>
+
+          </ul>
+        </nav>
+
+
+
+
       </header>
 
       <div class="div_hero">
@@ -321,6 +338,18 @@
   </div>
 
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $('.home_mobile_nav_target').on('click', function(){
+    $('.home_mobile_nav').toggle();
+  });
+
+  $('.home_mobile_nav').on('click', function(){
+    $(this).css("display", "none");
+  });
+
+</script>
 
 </main>
 
