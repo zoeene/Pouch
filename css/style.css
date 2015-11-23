@@ -108,6 +108,56 @@ a.mobile_nav_target {
    margin-left: 20px;
  }
 
+
+ html, body {
+   overflow-x:hidden;
+   background-color: #fafafa;
+
+ }
+
+ body {
+   font-family: "Lora", serif;
+   color: #ffffff;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "Montserrat", sans-serif;
+   color: #ffffff;
+   font-weight: normal;
+ }
+
+ h1, .h1_signup {
+   font-size: 60px;
+   margin: 0px;
+   font-weight: normal;
+ }
+ h2 {
+   font-size: 32px;
+   font-weight: normal;
+ }
+
+ p {
+   font-size: 22px;
+   line-height: 30px;
+   font-weight: normal;
+ }
+
+ .div_hero p {
+ margin-left: 400px;
+ margin-right: 400px;
+ }
+
+ a {
+   font-family: "Montserrat", sans-serif;
+   font-size: 12px;
+ }
+
+ li {
+   font-family: "Montserrat", sans-serif;
+   font-size: 18px;
+ }
+
+
+
 @media (min-width: 768px) {
   .dashboard_logo {
     float: left;
@@ -155,10 +205,10 @@ a.mobile_nav_target {
     margin-top: -16px;
   }
 
-    /*h1  {
+h1  {
     font-size: 30px;
   }
-
+/*
   .div_hero p  {
    font-size: 16px;
    margin-left: 200px;
@@ -168,53 +218,6 @@ a.mobile_nav_target {
 
 }
 
-
-html, body {
-  overflow-x:hidden;
-  background-color: #fafafa;
-
-}
-
-body {
-  font-family: "Lora", serif;
-  color: #ffffff;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-weight: normal;
-}
-
-h1, .h1_signup {
-  font-size: 60px;
-  margin: 0px;
-  font-weight: normal;
-}
-h2 {
-  font-size: 32px;
-  font-weight: normal;
-}
-
-p {
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-.div_hero p {
-margin-left: 400px;
-margin-right: 400px;
-}
-
-a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-}
-
-li {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-}
 
 
 
@@ -626,7 +629,7 @@ p .div_hero {
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
    text-align: center;
  }
- .links {
+ .s {
    /*position: relative;
    left: 0px;
    top: 917px;
@@ -958,6 +961,7 @@ a.add_circle {
 
 .blank_state h3 {
 color: #4A4A4A;
+margin-left: 80px;
 }
 
 .blank_state fa fa-th {
@@ -1062,6 +1066,10 @@ ul.rightnav_dsh li {
   /*height: 70px;*/
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
 
 }
 
