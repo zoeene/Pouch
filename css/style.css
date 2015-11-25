@@ -104,8 +104,7 @@ a.mobile_nav_target {
    opacity: 1;
    text-align: center;
    display: inline-block;
-   margin-top: 30px;
-   margin-left: 20px;
+   margin: 30px 0 0 20px;
  }
 
 
@@ -141,10 +140,10 @@ a.mobile_nav_target {
    font-weight: normal;
  }
 
- .div_hero p {
+ /*.div_hero p {
  margin-left: 400px;
  margin-right: 400px;
- }
+ }*/
 
  a {
    font-family: "Montserrat", sans-serif;
@@ -163,13 +162,10 @@ a.mobile_nav_target {
     float: left;
     z-index: 1;
     margin-top: -0px;
-
   }
 
-/*Why doesnt this work below?? Had to implement it in outside .navbar_logo code*/
-.navbar_logo {
-    margin-left: 20px;
-
+  .navbar_logo {
+    margin: 30px 0 0 0;
   }
 
 
@@ -208,14 +204,6 @@ a.mobile_nav_target {
 h1  {
     font-size: 30px;
   }
-/*
-  .div_hero p  {
-   font-size: 16px;
-   margin-left: 200px;
-   margin-right: 200px;
- }*/
-
-
 }
 
 
@@ -272,11 +260,15 @@ h1  {
  @media (min-width: 768px) {
    .container, .dash_container {
      width: 750px;
+     margin: 0 auto;
+
    }
  }
  @media (min-width: 992px) {
    .container, .dash_container {
      width: 970px;
+     margin: 0 auto;
+
    }
    .one-half {
      width:46%;
@@ -449,13 +441,16 @@ h1  {
  }
 
 
-.div_hero {
-text-align: center;
-padding-top: 160px;
-}
-p .div_hero {
-  margin-bottom: 20px;
-}
+  .div_hero {
+    text-align: center;
+    padding-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  p .div_hero {
+    margin-bottom: 20px;
+  }
 
  .h1_hero {
    position: relative;
@@ -1083,6 +1078,15 @@ ul.rightnav_dsh li {
 }
 
 @media (min-width: 768px) {
+
+  .div_hero {
+    text-align: center;
+    padding-top: 160px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
   .new_content {
     border: 3px dashed #ececec;
     border-radius: 21px;
