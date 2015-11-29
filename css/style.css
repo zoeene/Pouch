@@ -142,16 +142,7 @@ a.mobile_nav_target {
    line-height: 30px;
    font-weight: normal;
  }
-<<<<<<< HEAD
-/*
- .div_hero p {
-=======
 
- /*.div_hero p {
->>>>>>> 91d9d9cf0a29944e5471c3287994ba15600e7485
- margin-left: 400px;
- margin-right: 400px;
- }*/
 
  a {
    font-family: "Montserrat", sans-serif;
@@ -172,17 +163,17 @@ a.mobile_nav_target {
     margin-top: -0px;
   }
 
-<<<<<<< HEAD
+
 /*Why doesnt this work below?? Had to implement it in outside .navbar_logo code*/
 /*.navbar_logo {
     margin-left: 20px;
 
   }*/
-=======
+
   .navbar_logo {
     margin: 30px 0 0 0;
   }
->>>>>>> 91d9d9cf0a29944e5471c3287994ba15600e7485
+
 
 
   a.mobile_nav_target {
@@ -331,6 +322,7 @@ a.mobile_nav_target {
     width: 100%;
     font-size: 12px;
   }
+
 
 }
  /* HEADER */
@@ -489,24 +481,14 @@ a.mobile_nav_target {
 
 
 
-.div_hero {
-text-align: center;
-padding-top: 160px;
-padding-left: 10%;
-padding-right: 10%;
+ .div_hero {
+    text-align: center;
+    padding-top: 160px;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
-/*p .div_hero {
-  margin-bottom: 20px;
-}*/
-
-  .div_hero {
-    text-align: center;
-    padding-top: 80px;
-    width: 90%;
-    margin: 0 auto;
-  }
 
   p .div_hero {
     margin-bottom: 20px;
@@ -533,7 +515,7 @@ padding-right: 10%;
    font-weight: 400;
    text-align: center;
  }
- .notes, .images {
+ .notes, .images, .links {
    display: block;
    /*hard coded values get kittens killed*/
    /*height: 570px;*/
@@ -560,6 +542,13 @@ padding-right: 10%;
    margin-top: 30px;
    padding: 16px;
 
+ }
+
+ @media (max-width:768px) {
+    .btn_benefit {
+      width: 100%;
+      text-align: center;
+    }
  }
 
 
@@ -659,6 +648,7 @@ padding-right: 10%;
     width: 100%;
     display: inline-block;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
+    padding-bottom: 180px;
   }
 
   #imac-position, #pocket-position {
@@ -678,12 +668,20 @@ padding-right: 10%;
    padding-top: 10px;
  }
 
+
  .images {
    background-image: -webkit-radial-gradient(50% 50%, circle, #f5a623 50%, #e2991f 98%);
    background-image: radial-gradient(circle at 50% 50%, #f5a623 50%, #e2991f 98%);
    box-shadow: rgba(0, 0, 0, 0.49) 0px 1px 3px 0px inset;
    text-align: center;
  }
+
+  .links {
+    background-image: radial-gradient(50% 50%, #777A7F 50%, #5F6166 100%);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+    text-align: center;
+ }
+
  .s {
    /*position: relative;
    left: 0px;
@@ -781,16 +779,22 @@ padding-right: 10%;
    margin-top: auto;
  }
 
+ .testimonial_text {
+   display: inline-block;
+ }
+
  .testimonial_arrow2 {
    float: right;
    margin-right: 120px;
    margin-bottom: 200px;
+   display: inline-block;
 }
 
  .testimonial_arrow {
    float: left;
    margin-left: 120px;
    margin-top: 200px;
+   display: inline-block;
 
  }
 
@@ -857,8 +861,20 @@ padding-right: 10%;
    padding-bottom: 13px;
  }
 
- .banner_text {
+@media (max-width:768px;) {
+   .price-mid, .price-left, .price-right, .price-right-expert {
+     display: none;
+  }
+ }
+
+ .banner_text, .banner_text_PRO {
    color: #4A4A4A;
+ }
+
+ .banner_text_PRO {
+   display: block;
+   position: relative;
+   z-index: 5;
  }
 
  /*.price_btn {
@@ -913,7 +929,7 @@ padding-right: 10%;
 
  ul.footer_nav_links li a {
    font-family: Montserrat, sans-serif;
-   color: white;
+   /*color: white;*/
    font-size: 11px;
    text-transform: uppercase;
    text-decoration: none;
@@ -1152,7 +1168,7 @@ ul.rightnav_dsh li {
   .div_hero {
     text-align: center;
     padding-top: 160px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
 
