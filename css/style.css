@@ -314,6 +314,19 @@ a.mobile_nav_target {
     display: none;
   }
 
+  h1 {
+    font-size: 35px;
+  }
+
+  p .div_hero {
+    font-size: 10px;
+  }
+
+  a.btn_hero {
+    width: 100%;
+    font-size: 12px;
+  }
+
 }
  /* HEADER */
 
@@ -330,7 +343,7 @@ a.mobile_nav_target {
     background-repeat: no-repeat;
     height: 798px;
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 180px;
   }
 
 .hero_text2 {
@@ -711,6 +724,15 @@ padding-right: 10%;
    display: block;
    margin: 0 auto;
    width: 40%;
+}
+
+@media (max-width:768px) {
+  a.btn_hero  {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+  }
 }
 
  .price_btn {
