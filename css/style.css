@@ -107,8 +107,7 @@ a.mobile_nav_target {
    opacity: 1;
    text-align: center;
    display: inline-block;
-   margin-top: 30px;
-   margin-left: 20px;
+   margin: 30px 0 0 20px;
  }
 
 
@@ -143,8 +142,13 @@ a.mobile_nav_target {
    line-height: 30px;
    font-weight: normal;
  }
+<<<<<<< HEAD
 /*
  .div_hero p {
+=======
+
+ /*.div_hero p {
+>>>>>>> 91d9d9cf0a29944e5471c3287994ba15600e7485
  margin-left: 400px;
  margin-right: 400px;
  }*/
@@ -166,14 +170,19 @@ a.mobile_nav_target {
     float: left;
     z-index: 1;
     margin-top: -0px;
-
   }
 
+<<<<<<< HEAD
 /*Why doesnt this work below?? Had to implement it in outside .navbar_logo code*/
 /*.navbar_logo {
     margin-left: 20px;
 
   }*/
+=======
+  .navbar_logo {
+    margin: 30px 0 0 0;
+  }
+>>>>>>> 91d9d9cf0a29944e5471c3287994ba15600e7485
 
 
   a.mobile_nav_target {
@@ -214,14 +223,6 @@ a.mobile_nav_target {
 /*h1  {
     font-size: 30px;*/
   }
-/*
-  .div_hero p  {
-   font-size: 16px;
-   margin-left: 200px;
-   margin-right: 200px;
- }*/
-
-
 }
 
 
@@ -278,11 +279,15 @@ a.mobile_nav_target {
  @media (min-width: 768px) {
    .container, .container_dash {
      width: 750px;
+     margin: 0 auto;
+
    }
  }
  @media (min-width: 992px) {
    .container, .container_dash {
      width: 970px;
+     margin: 0 auto;
+
    }
    .one-half {
      width:46%;
@@ -483,6 +488,7 @@ a.mobile_nav_target {
  }
 
 
+<<<<<<< HEAD
 .div_hero {
 text-align: center;
 padding-top: 160px;
@@ -494,6 +500,18 @@ padding-right: 10%;
 /*p .div_hero {
   margin-bottom: 20px;
 }*/
+=======
+  .div_hero {
+    text-align: center;
+    padding-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  p .div_hero {
+    margin-bottom: 20px;
+  }
+>>>>>>> 91d9d9cf0a29944e5471c3287994ba15600e7485
 
  .h1_hero {
    position: relative;
@@ -1131,6 +1149,15 @@ ul.rightnav_dsh li {
 }
 
 @media (min-width: 768px) {
+
+  .div_hero {
+    text-align: center;
+    padding-top: 160px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
   .new_content {
     border: 3px dashed #ececec;
     border-radius: 21px;
