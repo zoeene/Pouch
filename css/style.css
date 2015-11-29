@@ -8,10 +8,11 @@
   float: right;
 }
 
-.mobile_nav, .home_mobile_nav ul {
-  list-style-type: none;
+.mobile_nav ul, .home_mobile_nav ul {
+  list-style: none;
   padding-left: 0px;
   margin: 0px;
+
 }
 
 .mobile_nav li a {
@@ -23,7 +24,7 @@
   padding: 20px 25px;
 }
 
-.mobile_nav,  li a:hover {
+.mobile_nav li a:hover {
   background-color: #dadada;
 }
 
@@ -38,15 +39,17 @@
   margin-top: -1px;
   z-index: 2;
   float: right;
+  text-transform: uppercase;
+  color: #383838;
 }
 
- .home_mobile_nav li a {
+  .home_mobile_nav li a {
   display: block;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase
   color: #383838;
   /*^ for some reason the color isn't holding?*/
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   text-decoration-style: none;
   text-decoration-color: none;
@@ -140,11 +143,11 @@ a.mobile_nav_target {
    line-height: 30px;
    font-weight: normal;
  }
-
+/*
  .div_hero p {
  margin-left: 400px;
  margin-right: 400px;
- }
+ }*/
 
  a {
    font-family: "Montserrat", sans-serif;
@@ -167,10 +170,10 @@ a.mobile_nav_target {
   }
 
 /*Why doesnt this work below?? Had to implement it in outside .navbar_logo code*/
-.navbar_logo {
+/*.navbar_logo {
     margin-left: 20px;
 
-  }
+  }*/
 
 
   a.mobile_nav_target {
@@ -205,8 +208,11 @@ a.mobile_nav_target {
     margin-top: -16px;
   }
 
-h1  {
-    font-size: 30px;
+
+
+
+/*h1  {
+    font-size: 30px;*/
   }
 /*
   .div_hero p  {
@@ -265,17 +271,17 @@ h1  {
   float: left;
 }
 
-.dash_container {
+.container_dash {
   margin: 0 auto;
 }
 
  @media (min-width: 768px) {
-   .container, .dash_container {
+   .container, .container_dash {
      width: 750px;
    }
  }
  @media (min-width: 992px) {
-   .container, .dash_container {
+   .container, .container_dash {
      width: 970px;
    }
    .one-half {
@@ -289,12 +295,26 @@ h1  {
    }
  }
  @media (min-width: 1200px) {
-   .container, .dash_container {
+   .container, .container_dash {
      width: 1170px;
      margin: 0 auto;
    }
  }
 
+@media (max-width: 768px) {
+  .middlenav {
+    display: none;
+  }
+
+  .new_content p {
+    font-size: 16px;
+  }
+
+  .home_mobile_nav {
+    display: none;
+  }
+
+}
  /* HEADER */
 
  .header {
@@ -310,6 +330,7 @@ h1  {
     background-repeat: no-repeat;
     height: 798px;
     width: 100%;
+    padding-bottom: 150px;
   }
 
 .hero_text2 {
@@ -452,10 +473,14 @@ h1  {
 .div_hero {
 text-align: center;
 padding-top: 160px;
+padding-left: 10%;
+padding-right: 10%;
+
 }
-p .div_hero {
+
+/*p .div_hero {
   margin-bottom: 20px;
-}
+}*/
 
  .h1_hero {
    position: relative;
@@ -1018,6 +1043,7 @@ ul.middlenav {
   text-align: center;
   list-style: none;
   color: #333;
+  padding-left: 0px;
 }
 
 ul.middlenav li {
