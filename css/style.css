@@ -46,7 +46,7 @@
   .home_mobile_nav li a {
   display: block;
   font-family: Montserrat, sans-serif;
-  text-transform: uppercase
+  text-transform: uppercase;
   color: #383838;
   /*^ for some reason the color isn't holding?*/
   font-size: 16px;
@@ -247,19 +247,18 @@ a.mobile_nav_target {
 }
 
 .quote-holder {
-  width: 400px;
-  margin: 0 auto 50px auto;
+  width: 80%;
+  margin: 0 auto;
   display: block;
 }
 
 .quote-right {
-    width: 70%;
-    margin-left: 4%;
-    float: left;
+    width: 50%;
+    float: right;
 }
 
 .quote-left {
-  width: 26%;
+  width: 50%;
   float: left;
 }
 
@@ -793,16 +792,19 @@ a.mobile_nav_target {
 
  .testimonial_arrow2 {
    float: right;
-   margin-right: 120px;
-   margin-bottom: 200px;
-   display: inline-block;
+   margin-right: 3%;
+   margin-top: 30vh;
+   /*margin-bottom: 200px;*/
+   display: block;
 }
 
  .testimonial_arrow {
    float: left;
-   margin-left: 120px;
-   margin-top: 200px;
-   display: inline-block;
+   margin-left: 3%;
+   margin-top: 30vh;
+
+   /*margin-top: 200px;*/
+   display: block;
 
  }
 
@@ -869,8 +871,8 @@ a.mobile_nav_target {
    padding-bottom: 13px;
  }
 
-@media (max-width:768px;) {
-   .price-mid, .price-left, .price-right, .price-right-expert {
+@media (max-width:768px) {
+   .lock {
      display: none;
   }
  }
@@ -968,8 +970,8 @@ a.mobile_nav_target {
  }
 
 .testimonial_p {
-  margin-left: 200px;
-  margin-right: 200px;
+  /*margin-left: 200px;
+  margin-right: 200px;*/
 }
 
 ul .Stella {
