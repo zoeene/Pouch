@@ -556,6 +556,9 @@ a.mobile_nav_target {
   float: left;
   display: block;
   width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+
 }
 
  .store, .power {
@@ -563,10 +566,13 @@ a.mobile_nav_target {
    display: block;
    float: left;
    width: 100%;
+
+
  }
 
  .power {
    margin-bottom: 100px;
+   padding-right: 30%;
  }
 
 .store h2, .power h2 {
@@ -574,8 +580,6 @@ a.mobile_nav_target {
   font-size: 36px;
   color: #80C2AF;
   line-height: 44px;
-  margin-left: 210px;
-  margin-top: 100px;
 }
 
  .power h2 {
@@ -588,7 +592,10 @@ a.mobile_nav_target {
    font-size: 24px;
    color: #777A7F;
    line-height: 30px;
-   margin-left: 210px;
+   /*margin-left: 210px;*/
+ }
+ .store p, .store h2 {
+   padding-right: 20%;
  }
 
  .power h2, .power p {
@@ -654,6 +661,7 @@ a.mobile_nav_target {
   #imac-position, #pocket-position {
     margin: 0 0 0 0;
     float: right;
+    position: relative;
   }
 
   #pocket-position {
