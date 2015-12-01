@@ -245,21 +245,25 @@ a.mobile_nav_target {
 }
 
 .quote-holder {
-  width: 400px;
-  margin: 0 auto 50px auto;
+  width: 80%;
+  margin: 0 auto;
   display: block;
 }
 
 .quote-right {
-    width: 70%;
-    margin-left: 4%;
-    float: left;
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding: 5% 0;
 }
 
 .quote-left {
-  width: 26%;
+  width: 10%;
   float: left;
+  padding: 3% 0;
+  margin-left: 35%;
 }
+
 
 .container_dash {
   margin: 0 auto;
@@ -873,7 +877,7 @@ a.mobile_nav_target {
    margin: 0 auto;
    padding-left: 10%;
    padding-right: 10%;
-   padding-bottom: 50px;
+   /*padding-bottom: 1%;*/
  }
 
  .testimonial_text {
@@ -882,14 +886,23 @@ a.mobile_nav_target {
 
  .testimonial_arrow2 {
    float: right;
-   display: inline-block;
-}
+   margin-right: -5%;
+   margin-top: 25%;
+   display: block;
+ }
 
  .testimonial_arrow {
    float: left;
-   display: inline-block;
-
+   margin-left: -5%;
+   margin-top: 25%;
+   display: block;
  }
+
+@media (max-width:1000px) {
+    .testimonial_arrow, .testimonial_arrow2 {
+      margin-top: 30vh;
+    }
+}
 
 /*pricing section work here*/
 
@@ -1095,6 +1108,15 @@ a.mobile_nav_target {
 
 ul .Stella {
   text-align: left;
+}
+
+.stellaimg {
+  border-radius: 100%;
+  height: auto;
+  width: auto;
+  max-width: 150%;
+  max-height: 150%;
+  border: 4px solid white;
 }
 
 .social {
