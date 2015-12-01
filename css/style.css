@@ -24,7 +24,7 @@
   padding: 20px 25px;
 }
 
-.mobile_nav li a:hover {
+.mobile_nav li a :hover {
   background-color: #dadada;
 }
 
@@ -46,8 +46,9 @@
   .home_mobile_nav li a {
   display: block;
   font-family: Montserrat, sans-serif;
-  text-transform: uppercase
+  text-transform: uppercase;
   color: #383838;
+  background-color: #fafafa;
   /*^ for some reason the color isn't holding?*/
   font-size: 16px;
   text-decoration: none;
@@ -209,13 +210,10 @@ a.mobile_nav_target {
   }
 
 
-
-
 /*h1  {
     font-size: 30px;*/
   }
 }
-
 
 
 
@@ -338,9 +336,9 @@ a.mobile_nav_target {
     background-image: url("../images/Hero_Image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 798px;
+    /*height: 798px;*/
     width: 100%;
-    padding-bottom: 180px;
+    padding-bottom: 10%;
   }
 
 .hero_text2 {
@@ -361,7 +359,7 @@ a.mobile_nav_target {
  .hero-arrow {
    color: #EB7B58;;
    display: block;
-   margin-top: 150px;
+   margin-top: 10%;
  }
 
  .navlogo {
@@ -384,7 +382,7 @@ a.mobile_nav_target {
    list-style-type: none;
    margin: 0px;
    -webkit-padding-start: 0px;
-   -webkit-padding-end: 5%;
+   /*-webkit-padding-end: 5%;*/
    padding-right: 0px;
 
 
@@ -393,7 +391,7 @@ a.mobile_nav_target {
  ul.leftnav {
    list-style-type: none;
    margin: 0px;
-   -webkit-padding-start: 5%;
+   /*-webkit-padding-start: 5%;*/
 
  }
 
@@ -448,6 +446,21 @@ a.mobile_nav_target {
    margin-top: 30px;
  }*/
 
+ @media (max-width: 1200px) {
+   ul.leftnav li {
+     display: none;
+   }
+
+   ul.rightnav li {
+     display: none;
+   }
+
+   a.home_mobile_nav_target {
+     display: block;
+     float: right;
+   }
+ }
+
 .navbar {
   height: 134px;
 }
@@ -491,7 +504,7 @@ a.mobile_nav_target {
 
 
   p .div_hero {
-    margin-bottom: 20px;
+    margin-bottom: 10%;
   }
 
  .h1_hero {
@@ -537,10 +550,8 @@ a.mobile_nav_target {
    line-height: 16px;
    text-transform: uppercase;
    text-decoration: none;
-   /*padding: 20px;*/
-   padding-top: 100px;
    margin-top: 30px;
-   padding: 16px;
+   padding: 20px 0;
 
  }
 
@@ -586,6 +597,11 @@ a.mobile_nav_target {
    margin-top: 200px;
  }
 
+@media (max-width:1000px) {
+  .power h2 {
+    margin-top: 50px;
+  }
+}
 
  .store p, .power p {
    font-family: Lora-Regular;
@@ -634,18 +650,21 @@ a.mobile_nav_target {
   }
 
   #everywhere-image {
-    margin-top: -500px;
+    margin-top: -35%;
     margin-left: 10%;
     width: 80%;
     position: absolute;
     text-align: center;
     z-index: 1;
-    padding-bottom: 300px;
   }
+
+
 
   .everywhere h1 {
     color: #333;
-    margin-bottom: 450px;
+    margin-bottom: 35%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
 
@@ -656,6 +675,22 @@ a.mobile_nav_target {
     display: inline-block;
     background-image: radial-gradient(50% 100%, #F8F8F8 50%, #EBEBEB 100%);
     padding-bottom: 180px;
+  }
+
+  @media (max-width: 768px) {
+    .everywhere h1 {
+      margin-bottom: 18%;
+      margin-top: 10%;
+    }
+
+    #everywhere-image {
+      margin-top: -35%;
+   }
+
+    .white_space {
+      padding-top: 0px;
+    }
+
   }
 
   #imac-position, #pocket-position {
@@ -670,6 +705,46 @@ a.mobile_nav_target {
     padding-left: 10%;
     margin-top: 100px;
   }
+
+.hide_hr {
+  display: none;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .one-half {
+    width: 46%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #pocket-position {
+    width: 75%;
+  }
+
+  #imac-position {
+    width: 86%;
+  }
+
+  .hide_hr {
+    display: inline-block;
+    margin: 10% 10%;
+    /*position: relative;*/
+    border-style: solid;
+    border-width: 2px;
+    color: #e6e6e6;
+    width: 80%;
+  }
+
+  .store {
+    margin-bottom: 60px;
+  }
+
+  .power {
+    margin: 2px auto;
+  }
+}
+
 
  .arrow {
    text-align: center;
@@ -773,7 +848,18 @@ a.mobile_nav_target {
  .white_space h3 {
    margin-top: 100px;
    color: #333;
+   padding: 0 5%;
  }
+
+ @media (max-width: 768px) {
+
+   .white_space h3 {
+     margin: 40px 2.5%;
+     /*text-align: center;*/
+   }
+
+ }
+
 
  .testimonials {
    /*you were missing the leading slash here*/
@@ -784,7 +870,10 @@ a.mobile_nav_target {
    z-index: 0;
    text-align: center;
    padding-top: 100px;
-   margin-top: auto;
+   margin: 0 auto;
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-bottom: 50px;
  }
 
  .testimonial_text {
@@ -793,15 +882,11 @@ a.mobile_nav_target {
 
  .testimonial_arrow2 {
    float: right;
-   margin-right: 120px;
-   margin-bottom: 200px;
    display: inline-block;
 }
 
  .testimonial_arrow {
    float: left;
-   margin-left: 120px;
-   margin-top: 200px;
    display: inline-block;
 
  }
@@ -810,7 +895,7 @@ a.mobile_nav_target {
 
  .pricing {
    display: block;
-   width: 100%;
+   /*width: 100%;*/
    /*another evil hard-coded height value*/
    /*height: 1186px;*/
    background: #EB7B58;
@@ -819,7 +904,7 @@ a.mobile_nav_target {
    /*box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);*/
    text-align: center;
    text-decoration: none;
-   padding: 50px 0;
+   padding: 50px 2%;
  }
 
  .pricing .container {
@@ -833,7 +918,7 @@ a.mobile_nav_target {
 
  /*this class gives your background elements something to push against without having to measure from the top of the page. this is important because if limits your responsive concerns to only this section of the page*/
  .lock {
-   position: absolute;
+   position: relative;
    display: block;
    width: 100%;
  }
@@ -869,11 +954,7 @@ a.mobile_nav_target {
    padding-bottom: 13px;
  }
 
-@media (max-width:768px;) {
-   .price-mid, .price-left, .price-right, .price-right-expert {
-     display: none;
-  }
- }
+
 
  .banner_text, .banner_text_PRO {
    color: #4A4A4A;
@@ -885,12 +966,52 @@ a.mobile_nav_target {
    z-index: 5;
  }
 
+ @media (max-width:1000px) {
+    .lock {
+      display: none;
+   }
+
+    .banner_text, .banner_text_PRO {
+      background-color: #FF8C67
+   }
+
+   p {
+     margin: 0 3%;
+   }
+
+  }
+
+ .box_middle {
+  background: #EB7B58;
+  box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
+  padding: 2% 0;
+ }
+
+ @media (max-width:1000px) {
+    .box_middle {
+      padding: 10% 0;
+      margin: 5% 0;
+     }
+  }
+
+
  /*.price_btn {
    width: 80%;
  }*/
 
  .testimonial_header {
    color: #EB7B58;
+ }
+
+ .btn {
+   width: 50%;
+ }
+
+ @media (max-width:768px) {
+   .btn {
+     /*padding: 5%;*/
+     width: 80%;
+  }
  }
 
  .footer, .footer2 {
@@ -967,10 +1088,10 @@ a.mobile_nav_target {
 
  }
 
-.testimonial_p {
+/*.testimonial_p {
   margin-left: 200px;
   margin-right: 200px;
-}
+}*/
 
 ul .Stella {
   text-align: left;
@@ -1248,4 +1369,9 @@ line-height: 12px;
 
 .facebook_left {
   background-image: radial-gradient(50% 50%, #3853A4 50%, #39568B 100%);
+}
+
+.logo_footer {
+  float: left;
+  z-index: 2;
 }
