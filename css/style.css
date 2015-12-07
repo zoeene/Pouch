@@ -24,9 +24,9 @@
   padding: 20px 25px;
 }
 
-.mobile_nav li a :hover {
-  background-color: #dadada;
-}
+.mobile_nav li a:hover {
+background-color: #dadada;
+  }
 
 
 
@@ -1192,7 +1192,7 @@ a.add_circle {
 
 .blank_state h3 {
 color: #4A4A4A;
-margin-left: 80px;
+margin-left: 5%;
 }
 
 .blank_state fa fa-th {
@@ -1296,22 +1296,26 @@ ul.rightnav_dsh li {
   /*margin-left: 200px;*/
   /*margin-right: 200px;*/
   /*height: 70px;*/
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 80px;
-  margin-right: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 
 }
 
 .new_content p {
   color: #4a4a4a;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: center;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 @media (min-width: 768px) {
@@ -1327,8 +1331,8 @@ ul.rightnav_dsh li {
   .new_content {
     border: 3px dashed #ececec;
     border-radius: 21px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 
   .new_content p {
